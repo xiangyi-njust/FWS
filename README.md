@@ -12,30 +12,33 @@ the work in future work sentences would be realistic in subsequent real studies.
 ## Directory structure
 FWS
 <pre>
+FWS
 ├─ Classify
 │    ├─ Bert.py
 │    ├─ Bilstm.py
 │    ├─ TextCNN.py
 │    ├─ data
 │    │    └─ TypeClassify.xlsx
-│    ├─ deep_learning.ipynb
+│    ├─ logs.txt
 │    ├─ main.py
+│    ├─ run.py
 │    └─ weights
 │           ├─ bert
 │           ├─ bilstm
 │           ├─ scibert
 │           └─ textcnn
-├─ Evaluate
+├─ ExtractKeyphrase
 │    ├─ ExtractKeyphrases.ipynb
 │    ├─ Rejust.ipynb
 │    └─ data
 │           ├─ keyphrase
 │           └─ raw
-├─ Extract
-│    ├─ data
-│    │    └─ recognition.xlsx
-│    └─ main.py
-└─ README.md
+├─ README.md
+└─ Recognize
+       ├─ data
+       │    └─ recognition.xlsx
+       ├─ main.py
+       └─ run.py
 </pre>
 
 ## Dataset discription
@@ -45,15 +48,13 @@ In order to reproduct our experiment result,you can follow these steps:
 
 > recognition 
 
-* based on your system,open the terminal and type this command
+based on your system,open the terminal and type this command
 <pre>python Recognition/run.py </pre>
-* enter the recognition folder and open the run.py
 
 > classify
 
-* based on your system,open the terminal and type this command
+based on your system,open the terminal and type this command
 <pre>python Classify/run.py</pre>
-* enter the recognition folder and open the run.py
 
 > extract keywords
 
