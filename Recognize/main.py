@@ -28,7 +28,7 @@ parser.add_argument('--flag',type=Boolean,default=False)
 parser.add_argument('--ori_path',type=str)
 parser.add_argument('--tar_path',type=str)
 parser.add_argument('--model',type=str)
-parser.add_argument('--cv',type=int)
+parser.add_argument('--cv',type=int,default=10)
 
 def remove_punctuation(line):
     line = str(line)
