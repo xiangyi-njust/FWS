@@ -11,6 +11,8 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 import numpy as np
 import sklearn.metrics as sm
 from sklearn.model_selection import train_test_split
+import sys
+import datetime
 
 class TextCNN():
     def __init__(self,shell_args):
@@ -79,9 +81,20 @@ class TextCNN():
             self.model = keras.models.load_model(self.model_save_path)
         
     def test(self):
-        print()
-        print("predict result:")
         _,test_x,_,test_y = train_test_split(self.x,self.y,test_size=0.1,random_state=11)
 
         preds = self.model.predict(test_x)
-        print(sm.classification_report([np.argmax(item) for item in test_y], [np.argmax(item) for item in preds],digits=4))
+
+        start = datetime.datetime.now()
+        standard_format = str(start.year)+'-'+str(start.month)+'-'+str(start.day)+"  "+ \
+                          str(start.hour)+':'+str(start.minute)+':'+str(start.second)
+        
+        model_name = 'textcnn'
+
+        with open('logs.txt','a') as f:
+            sys.stdout = f     
+            print(model_name)
+            print("************",end="")
+            print(standard_format,end="")
+            print("************")
+            print(sm.classification_report([np.argmax(item) for item in test_y], [np.argmax(item) for item in preds],digits=4))

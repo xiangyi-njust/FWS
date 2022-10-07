@@ -8,9 +8,11 @@ from tensorflow import keras
 from keras import initializers, regularizers, constraints
 import tensorflow as tf
 import numpy as np
+from sklearn.model_selection import train_test_split
 import sklearn.metrics as sm
 import pandas as pd
-from sklearn.model_selection import train_test_split
+import sys
+import datetime
 
 class Bilstm():
     def __init__(self,shell_args):
@@ -93,10 +95,21 @@ class Bilstm():
         _,test_x,_,test_y = train_test_split(self.x,self.y,test_size=0.1,random_state=11)
 
         preds = self.model.predict(test_x)
-        print(sm.classification_report
-                ([np.argmax(item) for item in test_y], 
-                 [np.argmax(item) for item in preds],digits=4
-                )
-            )
+
+        start = datetime.datetime.now()
+        standard_format = str(start.year)+'-'+str(start.month)+'-'+str(start.day)+"  "+ \
+                          str(start.hour)+':'+str(start.minute)+':'+str(start.second)
+
+        model_name = 'bilstm'
+        
+        with open('logs.txt','a') as f:
+            sys.stdout = f     
+            print(model_name)
+            print("************",end="")
+            print(standard_format,end="")
+            print("************") 
+            print(sm.classification_report([np.argmax(item) for item in test_y], 
+                 [np.argmax(item) for item in preds],digits=4)
+                 )
 
     

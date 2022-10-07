@@ -1,3 +1,4 @@
+from glob import escape
 import tensorflow as tf
 import pandas as pd
 from transformers import TFBertForSequenceClassification,BertTokenizer
@@ -5,13 +6,15 @@ import numpy as np
 from tensorflow import keras
 from sklearn.model_selection import train_test_split
 import sklearn.metrics as sm
+import datetime
+import sys
 max_len = 40
 
 class Bert:
     def __init__(self,arg_val):
-        weight = arg_val['weight']
-        self.tokenizer = BertTokenizer.from_pretrained(weight)
-        self.model = TFBertForSequenceClassification.from_pretrained(weight,num_labels=6)
+        self.weight = arg_val['weight']
+        self.tokenizer = BertTokenizer.from_pretrained(self.weight)
+        self.model = TFBertForSequenceClassification.from_pretrained(self.weight,num_labels=6)
         self.epochs = arg_val['epochs']
         self.batch_size = arg_val['batch_size']
         self.path = arg_val['path']
@@ -88,4 +91,22 @@ class Bert:
         for i,item in enumerate(self.ds_test_encoded.as_numpy_iterator()):
             preds.extend([np.argmax(item) for item in self.model.predict(item[0]).logits])
             trues.extend(item[1])
-        print(sm.classification_report(trues,preds,digits=4))
+
+        start = datetime.datetime.now()
+        standard_format = str(start.year)+'-'+str(start.month)+'-'+str(start.day)+"  "+ \
+                          str(start.hour)+':'+str(start.minute)+':'+str(start.second)
+        
+        model_name =''
+        if self.weight == 'lordtt13/COVID-SciBERT':
+            model_name = 'scibert'
+        else:
+            model_name = 'bert'
+        
+        with open('logs.txt','a') as f:
+            sys.stdout = f     
+            print(model_name)
+            print("************",end="")
+            print(standard_format,end="")
+            print("************")
+
+            print(sm.classification_report(trues,preds,digits=4))
