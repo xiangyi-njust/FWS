@@ -3,9 +3,9 @@
 ## Overview
 <b> Data and Code for paper "Automatic Recognition and Classification of Future Work Sentences from Academic Articles in a Specific Domain"
 
-The research content of the paper is to extract fws from acadamic paper,we choose the nlp as example,use the ACL、EMNLP、NAACL as our origin dataset, 
+The research object of the paper is future work sentence(fws), we choose the nlp domain as example,use the ACL、EMNLP、NAACL as our origin dataset, our main work include below parts:
 * After human annotation the future work sentence,we use some traditional machine learning models to judge one sentence is fws or not.
-* Ater that,we classify the fws in paper into six types,we use bert、textcnn、bilstm to implement the experiment.
+* Ater that,we classify the fws in paper into six types,we use bert、scibert、textcnn、bilstm to implement the experiment.
 * In additional,We compared the differences between keywords extracted from future work sentences and abstracts to verify whether
 the work in future work sentences would be realistic in subsequent real studies.
 
@@ -41,15 +41,22 @@ FWS
 ## Dataset discription
 
 ## Quick start
+In order to reproduct our experiment result,you can follow these steps:
 
 > recognition 
-<pre>python main.py </pre>
+
+* based on your system,open the terminal and type this command
+<pre>python Recognition/run.py </pre>
+* enter the recognition folder and open the run.py
 
 > classify
-when you input these command,some tips will output to help to use,such as:
-<pre>python main.py --model bert --weight bert-base-uncased --batch_size 64 --isTrained True --path data/TypeClassify --model_save_path weight/bert/</pre>
+
+* based on your system,open the terminal and type this command
+<pre>python Classify/run.py</pre>
+* enter the recognition folder and open the run.py
 
 > extract keywords
+
 we provide two notebooks,you can follow the steps to extract keywords and do some preprocess work
 
 ## Citation

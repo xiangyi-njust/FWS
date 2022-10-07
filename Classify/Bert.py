@@ -76,7 +76,7 @@ class Bert:
         optimizer = tf.keras.optimizers.Adam(learning_rate=5e-5,epsilon=1e-08,clipnorm=1)
         loss = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
         metric = tf.keras.metrics.SparseCategoricalAccuracy('accuracy')
-        callback = tf.keras.callbacks.EarlyStopping(monitor='val_accuracy',patience=3)
+        callback = tf.keras.callbacks.EarlyStopping(monitor='val_accuracy',patience=2)
         self.model.compile(optimizer=optimizer, loss=loss, metrics=[metric])
         if self.isTrained == False:
             self.model.fit(self.ds_train_encoded, epochs=self.epochs, validation_data=self.ds_test_encoded,
