@@ -12,33 +12,33 @@ the work in future work sentences would be realistic in subsequent real studies.
 ## Directory structure
 FWS
 <pre>
-FWS
+FWS                                              Root Directory
 ├─ Classify
-│    ├─ Bert.py
-│    ├─ Bilstm.py
-│    ├─ TextCNN.py
-│    ├─ data
+│    ├─ Bert.py                                  bert code for fws type classify
+│    ├─ Bilstm.py                                bilstm code for fws type classify
+│    ├─ TextCNN.py                               textcnn code for fws type classify
+│    ├─ data                                     fws type dataset
 │    │    └─ TypeClassify.xlsx
-│    ├─ logs.txt
-│    ├─ main.py
-│    ├─ run.py
-│    └─ weights
+│    ├─ logs.txt                                 record the model training result
+│    ├─ main.py                                  receive the command parameter and choose the model to train
+│    ├─ run.py                                   use this to reproduct our result
+│    └─ weights                                  network weights
 │           ├─ bert
 │           ├─ bilstm
 │           ├─ scibert
 │           └─ textcnn
 ├─ ExtractKeyphrase
-│    ├─ ExtractKeyphrases.ipynb
-│    ├─ Rejust.ipynb
+│    ├─ ExtractKeyphrases.ipynb                  code for extract keyphrases from fws and abstract in paper
+│    ├─ Rejust.ipynb                             rejust the extract result
 │    └─ data
-│           ├─ keyphrase
-│           └─ raw
+│           ├─ keyphrase                         keyphrases file, include:before rejust(xlsx)、after rejust(json)
+│           └─ raw                               raw data, include: fws、abstract and title、stopwords and so on
 ├─ README.md
 └─ Recognize
-       ├─ data
+       ├─ data                                   fws and no-fws dataset
        │    └─ recognition.xlsx
-       ├─ main.py
-       └─ run.py
+       ├─ main.py                                receive the command parameter and choose the model to train
+       └─ run.py                                 use this to reproduct our result
 </pre>
 
 ## Dataset discription
