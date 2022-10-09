@@ -2,9 +2,9 @@ import os
 
 # the result will output in logs.txt
 # bert
-os.system('python main.py --model bert --weight bert-base-uncased --batch_size 64 --path ../Dataset/Corpus_For_FWS_TypeClassify.xlsx --model_save_path weights/bert/ --isTrained True')
+os.system('python main.py --model bert --weight bert-base-uncased --epochs 6 --batch_size 64 --path /../Dataset/Corpus_For_FWS_TypeClassify.xlsx --model_save_path weights/bert/')
 # scibet
-os.system('python main.py --model bert --weight lordtt13/COVID-SciBERT --batch_size 64 --path ../Dataset/Corpus_For_FWS_TypeClassify.xlsx --model_save_path weights/scibert/ --isTrained True')
+os.system('python main.py --model bert --weight lordtt13/COVID-SciBERT --epochs 6 --batch_size 64 --path /../Dataset/Corpus_For_FWS_TypeClassify.xlsx --model_save_path weights/scibert/')
 # textcnn
 os.system('python main.py --model textcnn --path ../Dataset/Corpus_For_FWS_TypeClassify.xlsx --model_save_path weights/textcnn --isTrained True')
 # bilstm
