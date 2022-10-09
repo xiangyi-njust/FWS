@@ -48,12 +48,12 @@ To reproduce our experiment result, you can follow these steps:
 
 > recognition 
 
-based on your system, open the terminal and type this command
+based on your system, open the terminal in the specified directory and type this command
 <pre>python Recognition/run.py </pre>
 
 > classify
 
-based on your system, open the terminal and type this command
+based on your system, open the terminal in the specified directory and type this command
 <pre>python Classify/run.py</pre>
 
 > extract keywords
