@@ -12,33 +12,39 @@ the work in future work sentences would be realistic in subsequent real studies.
 ## Directory structure
 FWS
 <pre>
-FWS                                              Root Directory
-├─ Classify
-│    ├─ Bert.py                                  bert code for FWS type classify
-│    ├─ Bilstm.py                                bilstm code for FWS type classify
-│    ├─ TextCNN.py                               textcnn code for FWS type classify
-│    ├─ data                                     fws type dataset
-│    │    └─ TypeClassify.xlsx
-│    ├─ logs.txt                                 record the model training result
-│    ├─ main.py                                  receive the command parameter and chooses the model to train
-│    ├─ run.py                                   use this to reproduce our result
-│    └─ weights                                  network weights
+FWS
+├─ Dataset
+│    ├─ Corpus For KeyphraseExtraction
+│    │    ├─ FWS.xlsx
+│    │    └─ Titile_and_Abstract.xlsx
+│    ├─ Corpus_For_FWS_Recognition.xlsx
+│    ├─ Corpus_For_FWS_TypeClassify.xlsx
+│    ├─ Keyphrases
+│    │    ├─ abs_keywords.xlsx
+│    │    ├─ abs_keywords_rejusted.json
+│    │    ├─ fws_keywords.xlsx
+│    │    ├─ fws_keywords_rejusted.json
+│    │    └─ titles_keywords.xlsx
+│    └─ Stopwords.csv
+├─ FWS Recognition
+│    ├─ main.py
+│    └─ run.py
+├─ FWS Classification
+│    ├─ Bert.py
+│    ├─ Bilstm.py
+│    ├─ TextCNN.py
+│    ├─ logs.txt
+│    ├─ main.py
+│    ├─ run.py
+│    └─ weights
 │           ├─ bert
 │           ├─ bilstm
 │           ├─ scibert
 │           └─ textcnn
-├─ ExtractKeyphrase
-│    ├─ ExtractKeyphrases.ipynb                  code for extracting keyphrases from FWS and abstract in paper
-│    ├─ Rejust.ipynb                             rejust the extract result
-│    └─ data
-│           ├─ keyphrase                         keyphrases file, include:before rejust(xlsx)、after rejust(JSON)
-│           └─ raw dataset 						 including fws、abstract and title、stopwords, and so on
-├─ README.md
-└─ Recognize
-       ├─ data                                   FWS and no-FWS dataset
-       │    └─ recognition.xlsx
-       ├─ main.py                                receive the command parameter and chooses the model to train
-       └─ run.py                                 use this to reproduce our result
+├─ Keyphrase Extraction
+│    ├─ ExtractKeyphrases.ipynb
+│    └─ Rejust.ipynb
+└─ README.md
 </pre>
 
 ## Dataset discription
@@ -49,12 +55,12 @@ To reproduce our experiment result, you can follow these steps:
 > recognition 
 
 based on your system, open the terminal in the specified directory and type this command
-<pre>python Recognition/run.py </pre>
+<pre>python run.py </pre>
 
 > classify
 
 based on your system, open the terminal in the specified directory and type this command
-<pre>python Classify/run.py</pre>
+<pre>python run.py</pre>
 
 > extract keywords
 
