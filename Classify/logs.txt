@@ -1,2 +1,0 @@
-# record the test information in txt
-
