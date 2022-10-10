@@ -61,8 +61,9 @@ class TextCNN():
     def train(self):
         if self.isTrained == False:
             # data
-            train_x,test_x,train_y,test_y = train_test_split(self.x,self.y,test_size=0.1,random_state=11)
-
+            train_x,o_x,train_y,o_y = train_test_split(self.x,self.y,test_size=0.2,random_state=11)
+            test_x,_,test_y,_ = train_test_split(o_x,o_y,test_size=0.5,random_state=11)
+            
             # model setting
             self.net()
             self.model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
@@ -81,9 +82,10 @@ class TextCNN():
             self.model = keras.models.load_model(self.model_save_path)
         
     def test(self):
-        _,test_x,_,test_y = train_test_split(self.x,self.y,test_size=0.1,random_state=11)
-
-        preds = self.model.predict(test_x)
+        _,x,_,_y = train_test_split(self.x,self.y,test_size=0.1,random_state=11)
+        _,valid_x,_,valid_y = train_test_split(x,y,test_size=0.5,random_state=11)
+        
+        preds = self.model.predict(valid_x)
 
         start = datetime.datetime.now()
         standard_format = str(start.year)+'-'+str(start.month)+'-'+str(start.day)+"  "+ \
@@ -97,4 +99,4 @@ class TextCNN():
             print("************",end="")
             print(standard_format,end="")
             print("************")
-            print(sm.classification_report([np.argmax(item) for item in test_y], [np.argmax(item) for item in preds],digits=4))
+            print(sm.classification_report([np.argmax(item) for item in valid_y], [np.argmax(item) for item in preds],digits=4))
