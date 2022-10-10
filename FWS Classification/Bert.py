@@ -24,6 +24,7 @@ class Bert:
         self.data = None
         self.ds_test_encoded = None
         self.ds_train_encoded = None
+        self.ds_valid_encoded = None
         self.y_labels_to_id = None
 
     def convert_example_to_feature(self,text):
@@ -67,10 +68,12 @@ class Bert:
         
         sens = self.data['text'].tolist()
         labels = self.data['CAT'].tolist()
-        train_sens,test_sens,train_labels,test_labels = train_test_split(sens,labels,test_size=0.1,random_state=11)
+        train_sens,o_sens,train_labels,o_labels = train_test_split(sens,labels,test_size=0.2,random_state=11)
+        test_sens,valid_sens,test_labels,valid_labels = train_test_split(o_sens,o_labels,test_size=0.5,random_state=11)
         
         self.ds_train_encoded = self.encode_examples(train_sens,train_labels).batch(self.batch_size)
         self.ds_test_encoded = self.encode_examples(test_sens,test_labels).batch(self.batch_size)
+        self.ds_valid_encoded = self.encode_examples(valid_sens,valid_labels).batch(self.batch_size)
 
     def train(self):
         optimizer = tf.keras.optimizers.Adam(learning_rate=5e-5,epsilon=1e-08,clipnorm=1)
@@ -88,7 +91,7 @@ class Bert:
 
     def test(self):
         preds,trues = [],[]
-        for i,item in enumerate(self.ds_test_encoded.as_numpy_iterator()):
+        for i,item in enumerate(self.ds_valid_encoded.as_numpy_iterator()):
             preds.extend([np.argmax(item) for item in self.model.predict(item[0]).logits])
             trues.extend(item[1])
 
