@@ -70,7 +70,8 @@ class Bilstm():
     def train(self):
         # data
         if self.isTrained == False:
-            train_x,test_x,train_y,test_y = train_test_split(self.x,self.y,test_size=0.1,random_state=11)
+            train_x,o_x,train_y,o_y = train_test_split(self.x,self.y,test_size=0.2,random_state=11)
+            test_x,_,test_y,_ = train_test_split(o_x,o_y,test_size=0.5,random_state=11)
 
             self.net() 
             self.model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy'])
@@ -92,9 +93,10 @@ class Bilstm():
     def test(self):
         print()
         print("predict result:")
-        _,test_x,_,test_y = train_test_split(self.x,self.y,test_size=0.1,random_state=11)
+        _,x,_,_y = train_test_split(self.x,self.y,test_size=0.1,random_state=11)
+        _,valid_x,_,valid_y = train_test_split(x,y,test_size=0.5,random_state=11)
 
-        preds = self.model.predict(test_x)
+        preds = self.model.predict(valid_x)
 
         start = datetime.datetime.now()
         standard_format = str(start.year)+'-'+str(start.month)+'-'+str(start.day)+"  "+ \
@@ -108,7 +110,7 @@ class Bilstm():
             print("************",end="")
             print(standard_format,end="")
             print("************") 
-            print(sm.classification_report([np.argmax(item) for item in test_y], 
+            print(sm.classification_report([np.argmax(item) for item in valid_y], 
                  [np.argmax(item) for item in preds],digits=4)
                  )
 
