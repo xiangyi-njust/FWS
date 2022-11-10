@@ -82,7 +82,7 @@ class TextCNN():
             self.model = keras.models.load_model(self.model_save_path)
         
     def test(self):
-        _,x,_,_y = train_test_split(self.x,self.y,test_size=0.1,random_state=11)
+        _,x,_,y = train_test_split(self.x,self.y,test_size=0.1,random_state=11)
         _,valid_x,_,valid_y = train_test_split(x,y,test_size=0.5,random_state=11)
         
         preds = self.model.predict(valid_x)
