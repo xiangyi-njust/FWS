@@ -50,7 +50,7 @@ class Bert:
         
         for i in range(len(sens)):
             review = sens[i]
-            label = self.y_labels_to_id[str(labels[i])]
+            label = self.label_transform_dict[str(labels[i])]
             
             bert_input = self.convert_example_to_feature(review)
             input_ids_list.append(bert_input['input_ids'])
@@ -62,12 +62,16 @@ class Bert:
             self.map_example_to_dict)
 
     def readData(self):
-        self.data = pd.read_excel(self.path)
-        y_labels = [str(item) for item in self.data.CAT.value_counts().index.tolist()]
-        self.y_labels_to_id = dict([(item, i)for i,item in enumerate(y_labels)])
+        self.data = pd.read_csv(self.path)
+        # the label id should start from 0
+        self.label_transform_dict = {}
         
         sens = self.data['text'].tolist()
-        labels = self.data['CAT'].tolist()
+        labels = self.data['label'].tolist()
+        set_labels = list(set(labels))
+        for label in set_labels:
+            self.label_transform_dict[str(label)] = int(label)-1
+        
         train_sens,o_sens,train_labels,o_labels = train_test_split(sens,labels,test_size=0.2,random_state=11)
         test_sens,valid_sens,test_labels,valid_labels = train_test_split(o_sens,o_labels,test_size=0.5,random_state=11)
         
