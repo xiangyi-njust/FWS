@@ -79,7 +79,7 @@ def main():
     preds = [label_transform_dict[label] for label in preds]
 
     df['label'] = preds
-    df.to_excel('predict_result.xlsx')
+    df.to_csv('predict_result.csv')
 
 if __name__=='__main__':
     main()
