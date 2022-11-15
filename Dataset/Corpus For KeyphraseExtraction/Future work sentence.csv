@@ -5735,10 +5735,10 @@ N00-2017,in future work we intend to study ways that determine the appropriate c
 N00-2018,"ultimately it is this flexibility that let us try the various conditioning events, to move on to a markov grammar approach, and to try several markov grammars of different orders, without significant programming.",1,2000
 N00-2018,"indeed, we initiated this line of work in an attempt to create a parser that would be flexible enough to allow modifications for parsing down to more semantic levels of detail.",1,2000
 N00-2018,it is to this project that our future parsing work will be devoted.,6,2000
-N00-2020,future work in this area involves modeling the corpora with other probability distributions.,1,2020
-N00-2020,the method is very sensitive to the effectiveness of the probability model in modeling the normal elements.,1,2020
-N00-2020,extensions to the probability distributions presented here such as adding information about endings of words or using more features could increase the accuracy of the probability distribution and the overall performance of the anomaly detection system.,1,2020
-N00-2020,other future work involves applying this method to other marked corpora.,4,2020
+N00-2020,future work in this area involves modeling the corpora with other probability distributions.,1,2000
+N00-2020,the method is very sensitive to the effectiveness of the probability model in modeling the normal elements.,1,2000
+N00-2020,extensions to the probability distributions presented here such as adding information about endings of words or using more features could increase the accuracy of the probability distribution and the overall performance of the anomaly detection system.,1,2000
+N00-2020,other future work involves applying this method to other marked corpora.,4,2000
 N00-2021,"an obvious extension of this work, which we hope will be persued in the future, is to apply these techniques in broadcoverage feature-based tag parsers.",4,2000
 N00-2022,"finally, applications like verbmobil favour prioritized best-first rather than all-paths parsing.",1,2000
 N00-2022,"firstly, we will enhance the unpacking phase to take advantage of the large number of equivalence packings we observe.",1,2000
@@ -6163,7 +6163,7 @@ N06-2016,in ongoing further work we are exploring the relationship between prope
 N06-2017,we will also try to supplement m.nocb with other features of coherence to improve its performance.,1,2006
 N06-2017,"in our future work, we intend to directly evaluate their method using a substantially large number of alternative orderings and m.nocb as the baseline.",3,2006
 N06-2019,we also plan to evaluating the benefit of disfluency modeling in bleaching speech data for text-based machine translation.,3,2006
-N06-2020,in the future we plan to investigate the influence of the context size on sense discrimination performance.,2,2020
+N06-2020,in the future we plan to investigate the influence of the context size on sense discrimination performance.,2,2006
 N06-2021,"we will investigate other features to improve the classification results, such as name information, acoustic or prosodic features, and speaker clustering results (considering that the same speaker typically has the same role tag).",1,2006
 N06-2021,"we plan to examine the effect of using speech recognition output, as well as automatic speaker segmentation and clustering results.",3,2006
 N06-2021,analysis of difference news sources may also reveal some interesting findings.,2,2006
@@ -6369,11 +6369,11 @@ N07-2017,"future work will investigate additional classifiers, classifier combin
 N07-2017,we are also interested in applying a language model to decode an alignment network that has been scored with our classifier.,1,2007
 N07-2018,our future work will focus on more thorough evaluation of the algorithm and integrating it into a summarization system.,3,2007
 N07-2019,"in future work, we plan to exploit other sources of metadata such as e-mails, as well as the structure of the meetings themselves.",2,2007
-N07-2020,"continuing along these lines, we are currently creating two new tests.",1,2020
-N07-2020,"we are constructing a new arabic dlpt-star test, tailoring the document selection more specifically for comprehension testing and ensuring texts and tasks are at the intended ilr levels.",3,2020
-N07-2020,we intend for both of these tests to be available for a public machine translation evaluation to be conducted in 2007.,3,2020
-N07-2020,we are also constructing a mandarin chinese test with similar design specifications.,3,2020
-N07-2020,in future tests we wish to include level 1 documents and questions.,2,2020
+N07-2020,"continuing along these lines, we are currently creating two new tests.",1,2007
+N07-2020,"we are constructing a new arabic dlpt-star test, tailoring the document selection more specifically for comprehension testing and ensuring texts and tasks are at the intended ilr levels.",3,2007
+N07-2020,we intend for both of these tests to be available for a public machine translation evaluation to be conducted in 2007.,3,2007
+N07-2020,we are also constructing a mandarin chinese test with similar design specifications.,3,2007
+N07-2020,in future tests we wish to include level 1 documents and questions.,2,2007
 N07-2022,"in future work, we could consider using various smt features (as would be required for a phrase-based smt system).",1,2007
 N07-2024,our ultimate goal is to identify the errors in the non-native sentences and propose corrections.,6,2007
 N07-2024,we also plan to explore techniques for combining large mt training corpora and smaller non-native training corpora.,1,2007
@@ -7629,8 +7629,8 @@ N18-2007,"in future work, we aim to apply this model to other problems where lon
 N18-2012,"we also plan to investigate how this method transfers to related tasks, such as evaluating open-domain dialogue responses, e.g.(lowe et al., 2017).",4,2018
 N18-2015,future investigation will be needed to determine whether this is a property inherent to human storytelling or a form of bias introduced during data collection.,6,2018
 N18-2018,"in future work, we would conduct more rigorous comparative evaluation with human humor recognition and look into how the humorous texts can be generated using deep learning models as well.",3,2018
-N18-2020,future work will conduct user studies to assess the relative importance of different evaluation criteria.,3,2020
-N18-2020,a better understanding of how these interact may lead to improved semantic evaluation that will alleviate the need for a high number of references.,1,2020
+N18-2020,future work will conduct user studies to assess the relative importance of different evaluation criteria.,3,2018
+N18-2020,a better understanding of how these interact may lead to improved semantic evaluation that will alleviate the need for a high number of references.,1,2018
 N18-2021,"in the future, we wish to explore the effectiveness of r-spen on various tasks using domain knowledge functions with varying degrees of complexity.",4,2018
 N18-2022,"future work may also compare the catalonian situation with multilingual societies in which a minority language is discouraged (karabakh, 2013), or in which the languages are more equally distributed (blommaert, 2011).",5,2018
 N18-2023,"as future work, amr-covington produces sequences of no-arcs which could be shortened by using non-local transitions (qi and manning, 2017; fernandez-gonz ′ alez and g ′ omez- ′ rodr′?guez, 2017).",1,2018
@@ -8031,7 +8031,7 @@ N19-2010,"future research will include verifying how much our headline generatio
 N19-2018,we would also like to jointly model the relation extractor and the entity linker to improve the model performance.,1,2019
 N19-2018,"in future work, we would like to investigate its effectiveness and robustness in a cross-lingual setting.",3,2019
 N19-2019,"as a future research direction for conversational ai, we think that to train and test a k-nn model for predicting which dialog move to take will be beneficial as well.",1,2019
-N19-2020,"we share the challenges of annotating a user reported bug dataset with non-technical annotators, as opposed to using annotations from engineers.",2,2020
+N19-2020,"we share the challenges of annotating a user reported bug dataset with non-technical annotators, as opposed to using annotations from engineers.",2,2019
 N19-2023,"in the future, the proposed approach could be applied to other dissimilar language pairs, e.g. english and chinese.",2,2019
 N19-2023,other possible extensions include using multi-lingual embeddings that could complement the currently transferred weights.,1,2019
 N19-2025,"in future work, we plan to address this through several directions, including end to end de-id (ghannay et al., 2018), lattice-based techniques (ladhak et al., 2016), and diarization and segmentation of the audio as part of the transcription process (cerva et al., 2013).",5,2019
@@ -8636,7 +8636,7 @@ P06-2016,"further research in both experimental and theoretical aspects of this 
 P06-2018,one limitation of our method is the fact that it treats the classification task separately for each target node.,1,2006
 P06-2019,an appealing future direction is the incorporation of discourse-based constraints into our models.,1,2006
 P06-2019,"we plan to apply our method to languages with more flexible word order than english (e.g., german) and more challenging spoken domains (e.g., meeting data) where parsing technology may be less reliable.",2,2006
-P06-2020,we introduced an oracle score based upon the simple model of the probability that a human will choose to include a term in a summary.,1,2020
+P06-2020,we introduced an oracle score based upon the simple model of the probability that a human will choose to include a term in a summary.,1,2006
 P06-2021,"in future work we hope to extend this algorithm to provide a more efficient algorithmic implementation, and also to apply the algorithm in areas such as the machine translation of nounnoun compounds, where the identification of semantic relations in compounds is a crucial step in the translation process.",4,2006
 P06-2027,our approach features the use of corpus statistics derived from both lexical and syntactic analysis across documents.,1,2006
 P06-2030,"future work includes (i) extending the method to an incremental approach for extracting story pairs, (ii) comparing our clustering method with the other existing methods such as x-means(pelleg, 2000), and (iii) applying the method to the tdt4 for quantitative evaluation.",1,2006
@@ -9059,7 +9059,7 @@ P09-2018,in future work we plan to apply disambiguation techniques to address th
 P09-2018,"we also plan to evaluate the performance of directional measures in additional tasks, and compare it with additional symmetric measures.",3,2009
 P09-2019,"we are particularly interested in domain adaptation, and whether distributional similarities can profit from domain corpora for better performance.",2,2009
 P09-2019,current efforts are devoted to study the integration of the selectional preference models presented in this paper in a in-house srl system.,1,2009
-P09-2020,"future work involves studying the robustness of our discourse segments on other corpora, such as formal texts from the medical domain and other informal texts.",2,2020
+P09-2020,"future work involves studying the robustness of our discourse segments on other corpora, such as formal texts from the medical domain and other informal texts.",2,2009
 P09-2021,our future work includes adding more expert knowledge through error analysis to incrementally improve the performance.,1,2009
 P09-2021,"furthermore, actual development and evaluation of a db-call system will be arranged so that we may investigate how much the cost of collecting data and evaluation would be reduced by using language learner simulation.",3,2009
 P09-2022,"however, because our analyzer has scalability that can freely add new features, for our future work, we hope to adopt the case frames as new features and compare their effect.",3,2009
@@ -9296,9 +9296,9 @@ P10-2017,"finally, we will to explore task-based evaluations.",3,2010
 P10-2018,a further research direction we are investigating is exploitation of unlabeled texts.,2,2010
 P10-2019,it is still an open question what kinds of syntactic information is most important for chinese srl.,5,2010
 P10-2019,we suggest that our attempt at semantics-driven shallow parsing is a possible way to better exploit this problem.,1,2010
-P10-2020,future research into association measures that are not based on the independence assumption will also include considering different em variants and other automatically learnable models besides the amms used in this paper.,1,2020
-P10-2020,a possible obstacle in the adoption of amms in collocation extraction is that we have not provided any heuristic for setting the number of classes for the amms.,5,2020
-P10-2020,we hope to be able to look into this question in future research.,6,2020
+P10-2020,future research into association measures that are not based on the independence assumption will also include considering different em variants and other automatically learnable models besides the amms used in this paper.,1,2010
+P10-2020,a possible obstacle in the adoption of amms in collocation extraction is that we have not provided any heuristic for setting the number of classes for the amms.,5,2010
+P10-2020,we hope to be able to look into this question in future research.,6,2010
 P10-2021,"yet another direction of this research is to investigate if our methodology is applicable to other types of collocations, such as an and pn in addition to vn dealt with in this paper.",1,2010
 P10-2021,we will conduct a user study to investigate whether our system would improve a learner's writing in a real setting.,3,2010
 P10-2025,future work will involve examining the proposed method for different language pairs such as english-chinese and english japanese and evaluating the impact of our proposed method on smt performance.,2,2010
@@ -9568,7 +9568,7 @@ P11-2014,"some possible extensions of our work include automatically generating 
 P11-2015,we also are investigating how we can better utilize the output of our pcfg parsers for classification.,1,2011
 P11-2015,we look to automate the expansion of the training set of vandalized revisions to include examples from outside of wikipedia that reflect similar language styles.,1,2011
 P11-2018,interesting future work should be devoted to address the use of structural kernels for the proposed reranker.,5,2011
-P11-2020,"in future, we will extend this analysis to the complementary turn-taking category of turn yielding cues and explore how a spoken dialogue system may take advantage of information about entrainment to improve dialogue coordination and the user experience.",4,2020
+P11-2020,"in future, we will extend this analysis to the complementary turn-taking category of turn yielding cues and explore how a spoken dialogue system may take advantage of information about entrainment to improve dialogue coordination and the user experience.",4,2011
 P11-2025,we hope that availability of this corpus motivates more research on statistical scope disambiguation.,4,2011
 P11-2025,"since world knowledge plays a major role in scope disambiguation, we believe that leveraging unlabeled domain specific data in order to extract lexical information is a promising approach for scope disambiguation.",1,2011
 P11-2025,our goal is to expand the corpus up to twice in size.20% of the corpus will be annotated and the rest will be left for the purpose of semisupervised learning.,2,2011
@@ -10387,7 +10387,7 @@ P15-2013,"as future work, it is necessary to further this investigation by takin
 P15-2013,"as suggested in (gatt , 2013), the effect of discrimination may be perceived as a continuum, and in that case a practical reg algorithm should be able to make more complex decisions that those presently implemented.",1,2015
 P15-2019,in future we plan to upgrade the current word prediction pathway to a sentence reconstruction and/or sentence paraphrasing task in order to encourage the formation of representations of full sentences.,2,2015
 P15-2019,"we also want to explore the acquired structure further, especially for generalizing the grounded meanings to those words for which visual data is not available.",1,2015
-P15-2020,"in future work, we plan to explore more sophisticated visual generality measures, other semantic relations and different ways of fusing visual representations with linguistic knowledge.",1,2020
+P15-2020,"in future work, we plan to explore more sophisticated visual generality measures, other semantic relations and different ways of fusing visual representations with linguistic knowledge.",1,2015
 P15-2022,in the future we will investigate stronger network structure such as lstm to further improve the prediction power of our model.,1,2015
 P15-2024,our future work includes experiments with other types of slpt problems that focus on different aspects of translation quality and language understanding.,3,2015
 P15-2030,"in the future, we will investigate ways for automatically optimizing the hyperparameters of the network (snoek et al., 2012) and various extensions to recursive or hierarchical convolutions.",1,2015
