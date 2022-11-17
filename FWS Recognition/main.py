@@ -66,7 +66,7 @@ def lemm(sentence):
 def preprocess(texts):
     re_texts = [remove_punctuation(text) for text in texts]
     le_texts = [lemm(text) for text in re_texts]
-    return texts
+    return le_texts
 
 def getTfidf(ori_path,tar_path):
     # read data
@@ -76,7 +76,7 @@ def getTfidf(ori_path,tar_path):
     
     texts = preprocess(texts)
     # extract the tfidf feature
-    vectorizer = TfidfVectorizer(ngram_range=(1, 3), min_df=3, max_df=1.0, sublinear_tf=True, analyzer='word',)
+    vectorizer = TfidfVectorizer(ngram_range=(1, 3), min_df=3, sublinear_tf=True, analyzer='word',)
     vectorizer.fit(texts)
     texts = vectorizer.transform(texts)
 
