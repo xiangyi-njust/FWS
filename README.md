@@ -15,35 +15,33 @@ FWS
 FWS
 ├─ Dataset
 │    ├─ Corpus For KeyphraseExtraction
-│    │    ├─ FWS.xlsx
-│    │    └─ Titile_and_Abstract.xlsx
-│    ├─ Corpus_For_FWS_Recognition.xlsx
-│    ├─ Corpus_For_FWS_TypeClassify.xlsx
-│    ├─ Keyphrases
-│    │    ├─ abs_keywords.xlsx
-│    │    ├─ abs_keywords_rejusted.json
-│    │    ├─ fws_keywords.xlsx
-│    │    ├─ fws_keywords_rejusted.json
-│    │    └─ titles_keywords.xlsx
-│    └─ Stopwords.csv
-├─ FWS Recognition
-│    ├─ main.py
-│    └─ run.py
+│    │    ├─ Future work sentence.csv
+│    │    ├─ Stopwords.csv
+│    │    ├─ Title and Abstract.csv
+│    │    └─ replace.txt
+│    ├─ Corpus_For_FWS_Recognition.csv
+│    ├─ Corpus_For_FWS_Recognition_Predict.csv
+│    ├─ Corpus_For_FWS_TypeClassify.csv
+│    ├─ Corpus_For_FWS_TypeClassify_Predict.csv
+│    └─ Keyphrases
+│           ├─ abs_keywords.xlsx
+│           ├─ abs_keywords_rejusted.json
+│           ├─ fws_keywords.xlsx
+│           └─ fws_keywords_rejusted.json
 ├─ FWS Classification
 │    ├─ Bert.py
 │    ├─ Bilstm.py
 │    ├─ TextCNN.py
 │    ├─ logs.txt
 │    ├─ main.py
+│    ├─ predict.py
 │    ├─ run.py
 │    └─ weights
-│           ├─ bert
 │           ├─ bilstm
-│           ├─ scibert
 │           └─ textcnn
-├─ Keyphrase Extraction
-│    ├─ ExtractKeyphrases.ipynb
-│    └─ Rejust.ipynb
+├─ FWS Recognition
+│    ├─ main.py
+│    └─ run.py
 └─ README.md
 </pre>
 

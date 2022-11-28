@@ -18,6 +18,7 @@ from nltk.corpus import stopwords
 from nltk import word_tokenize, pos_tag
 from nltk.corpus import wordnet
 from nltk.stem import WordNetLemmatizer
+import random
 
 # user's intention can divide two types:
 # 1. use model to extract fws  -- my target is not package a tool for others to use
@@ -29,6 +30,28 @@ parser.add_argument('--ori_path',type=str)
 parser.add_argument('--tar_path',type=str)
 parser.add_argument('--model',type=str)
 parser.add_argument('--cv',type=int,default=10)
+
+
+def JustPercent(texts,labels):
+    neg_texts,neg_labels = [],[]
+    pos_texts,pos_labels = [],[]
+    for i in range(len(labels)):
+        if labels[i] == 0:
+            neg_texts.append(texts[i])
+        else:
+            pos_texts.append(texts[i])
+            pos_labels.append(labels[i])
+
+    random.shuffle(neg_texts)
+
+    n = len(neg_texts)
+
+    # neg_texts = neg_texts[:int(n*0.2)]
+    neg_texts = neg_texts[:9009]
+    neg_labels = [0 for i in range(len(neg_texts))]
+    
+    # return neg_texts,neg_labels,pos_texts,pos_labels
+    return neg_texts+pos_texts,neg_labels+pos_labels
 
 def remove_punctuation(line):
     line = str(line)
@@ -73,10 +96,12 @@ def getTfidf(ori_path,tar_path):
     df = pd.read_excel(ori_path)
     texts = df['text'].tolist()
     labels = df['label'].tolist()
-    
+ 
     texts = preprocess(texts)
+    # adjust the negative examples
+    texts,labels = JustPercent(texts,labels)
     # extract the tfidf feature
-    vectorizer = TfidfVectorizer(ngram_range=(1, 3), min_df=3, sublinear_tf=True, analyzer='word',)
+    vectorizer = TfidfVectorizer(ngram_range=(1, 3), min_df=3,max_df=1.0,sublinear_tf=True, analyzer='word',)
     vectorizer.fit(texts)
     texts = vectorizer.transform(texts)
 
@@ -105,32 +130,26 @@ def evaluate(clf,texts,labels,cv):
     print()
 
 def svm(texts,labels,cv=10):
-    clf = LinearSVC(max_iter=5000, C=15,)
-    selector = RFE(clf, n_features_to_select=5200, step=5000).fit(texts, labels)
+    clf = LinearSVC(max_iter=5000, C=1.0,)
+    selector = SelectKBest(chi2,k=14000).fit(texts,labels)
     texts = selector.transform(texts)
     evaluate(clf,texts,labels,cv)
 
 def nb(texts,labels,cv=10):
     clf = BernoulliNB(alpha=0.0001,)
-    texts = SelectFromModel(clf, norm_order=1).fit_transform(texts, labels)
+    selector = SelectKBest(chi2,k=14000).fit(texts,labels)
+    texts = selector.transform(texts)
     evaluate(clf,texts,labels,cv)
 
 def rf(texts,labels,cv=10):
     clf = RandomForestClassifier(n_estimators=200)
-    selector = RFE(clf, n_features_to_select=5200, step=5000).fit(texts, labels)
+    selector = SelectKBest(chi2,k=14000).fit(texts,labels)
     texts = selector.transform(texts)
-    evaluate(clf,texts,labels,cv)
-
-def knn(texts,labels,cv=10):
-    clf = KNeighborsClassifier(n_neighbors=12)
-    selector = VarianceThreshold(0.00001)
-    texts = selector.fit_transform(texts, labels)
-    texts = SelectKBest(chi2, k=90).fit_transform(texts, labels)
     evaluate(clf,texts,labels,cv)
 
 def lr(texts,labels,cv=10):
     clf = LR(max_iter=1000)
-    selector = RFE(clf, n_features_to_select=5200, step=5000).fit(texts, labels)
+    selector = SelectKBest(chi2,k=14000).fit(texts,labels)
     texts = selector.transform(texts)
     evaluate(clf,texts,labels,cv)
 
@@ -179,8 +198,6 @@ def main():
         svm(texts,labels,cv)
     elif arg_val['model'] == 'random-forest':
         rf(texts,labels,cv)
-    elif arg_val['model'] == 'knn':
-        knn(texts,labels,cv)
     elif arg_val['model'] == 'logistic-regression':
         lr(texts,labels,cv)
     elif arg_val['model'] == 'naive-bayes':
