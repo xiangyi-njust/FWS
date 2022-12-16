@@ -2,8 +2,6 @@ import os
 
 # svm
 os.system("python main.py --model svm --ori_path ..//Dataset//Corpus_For_FWS_Recognition.xlsx --tar_path data//tfidf.pkl")
-# knn
-os.system("python main.py --model knn --tar_path data//tfidf.pkl --flag True")
 # naive bayes
 os.system("python main.py --model nb --tar_path data//tfidf.pkl --flag True")
 # logistic learning

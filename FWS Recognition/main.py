@@ -77,13 +77,13 @@ def get_wordnet_pos(tag):
         return None
 
 def lemm(sentence):
-    tokens = word_tokenize(sentence)  # 分词
-    tagged_sent = pos_tag(tokens)     # 获取单词词性
+    tokens = word_tokenize(sentence)
+    tagged_sent = pos_tag(tokens)  
     wnl = WordNetLemmatizer()
     lemmas_sent = []
     for tag in tagged_sent:
         wordnet_pos = get_wordnet_pos(tag[1]) or wordnet.NOUN
-        lemmas_sent.append(wnl.lemmatize(tag[0], pos=wordnet_pos)) # 词形还原
+        lemmas_sent.append(wnl.lemmatize(tag[0], pos=wordnet_pos))
     return ' '.join(lemmas_sent)
 
 def preprocess(texts):
