@@ -6,7 +6,7 @@
 The aim of this paper is automatic recognition and classification of Future Work Sentences (FWS) from academic articles. We choose the NLP domain as an example, and use papers from three main conferences, naemly ACL、EMNLP、NAACL, as exprimental dataset. Our work includes the followig aspects:
 * After human annotation of the future work sentence, we use some traditional machine learning models including logistic regression (LR),  naive Bayes (NB)   support vector machine (SVM)  and random forest (RF), to judge whether one sentence is FWS or not.
 * After that, we classify the FWS in paper into six types including Method, Resources, Evaluation, Application, Problem and Other, via Bert, Scibert, Textcnn and Bilstm models.
-* In addition, We compare differences between keywords which are extracted from future work sentences and abstractsin other papers published several years later, to evaluate the effectiveness of FWS.
+* In addition, We compare differences between keywords which are extracted from future work sentences and abstracts in other papers published several years later, to evaluate the effectiveness of FWS.
 
 ## Directory structure
 FWS
@@ -51,12 +51,12 @@ To reproduce our experiment result, you can follow these steps:
 
 > Recognition 
 
-based on your system, open the terminal in the specified directory and type this command
+based on your system, open the terminal in the *FWS Recognition* directory and type this command
 <pre>python run.py </pre>
 
 > Classify
 
-based on your system, open the terminal in the specified directory and type this command
+based on your system, open the terminal in the *FWS Classification* directory and type this command
 <pre>python run.py</pre>
 
 > Extract keywords
