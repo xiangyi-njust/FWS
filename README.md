@@ -52,7 +52,7 @@ we release our all train dataset in *Dataset* directory:
 	
 	Corpus_For_FWS_TypeClassify.csv
 
-Additionaly, we release a part of our test dataset, if you need the whole data, you can contact us
+Additionaly, we release a part of our test dataset, if you need the whole data, contact us please.
 
 ## Quick start
 To reproduce our experiment result, you can follow these steps:
