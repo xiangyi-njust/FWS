@@ -1,0 +1,100 @@
+id,year,chapter,text
+2020.acl-demos.1.txt,2020,7 Conclusion,another direction for improvement is to further enhance the ability to interact with users via a conversation interface.
+2020.acl-demos.1.txt,2020,7 Conclusion,"finally, the system produces the video of an animated avatar reading the news with synthesized voice."
+2020.acl-demos.1.txt,2020,7 Conclusion,"first, it learns how to write news articles based on a template based table2text technology, and summarize the news through an extraction based method."
+2020.acl-demos.1.txt,2020,7 Conclusion,"in this paper, we present xiaomingbot, a multilingual and multi-modal system for news reporting."
+2020.acl-demos.1.txt,2020,7 Conclusion,"next, its system translates the summarization into multiple languages."
+2020.acl-demos.1.txt,2020,7 Conclusion,"one such important direction for future improvement is the expansion of areas that it can work in, which can be achieved through a promising approach of adopting model based technologies together with rule/template based ones."
+2020.acl-demos.1.txt,2020,7 Conclusion,"owing to the voice cloning model that can learn from a few chinese audio samples, xiaomingbot can maintain consistency in intonation and voice projection across different languages."
+2020.acl-demos.1.txt,2020,7 Conclusion,"so far, xiaomingbot has been deployed online and is serving users."
+2020.acl-demos.1.txt,2020,7 Conclusion,the entire process of xiaomingbot’s news reporting can be condensed as follows.
+2020.acl-demos.1.txt,2020,7 Conclusion,"the system is but a first attempt to build a fully functional robot reporter capable of writing, speaking, and expressing with motion."
+2020.acl-demos.1.txt,2020,7 Conclusion,"xiaomingbot is not yet perfect, and has limitations and room for improvement."
+2020.acl-demos.10.txt,2020,6 Conclusion,"in particular, we plan to incorporate human performance as a reference metric, integrating psycholinguistic experimental results and supporting easy experimental design starting from the test suite format."
+2020.acl-demos.10.txt,2020,6 Conclusion,"syntaxgym is continually evolving: we plan to add new features to the site, and to develop further in response to user feedback."
+2020.acl-demos.10.txt,2020,6 Conclusion,syntaxgym promises to advance the progress of language model evaluation by uniting the theoretical expertise of linguists with the technical skills of nlp researchers.
+2020.acl-demos.10.txt,2020,6 Conclusion,"the site is fully functional at syntaxgym.org, and the entire framework is available as open-source code."
+2020.acl-demos.10.txt,2020,6 Conclusion,"this paper presented syntaxgym, an online platform and open-source framework for targeted syntactic evaluation of neural network language models."
+2020.acl-demos.10.txt,2020,6 Conclusion,"we also plan to further incorporate language models into the lm-zoo tool, allowing broader access to state-of-the-art language models in general."
+2020.acl-demos.10.txt,2020,6 Conclusion,"we welcome open-source contributions to the website and to the general framework, and especially encourage the nlp community to contribute their models to the lm-zoo repository."
+2020.acl-demos.11.txt,2020,8 Conclusion,"this system enables the user to readily search a knowledge network of extracted, linked, and summarized complex events from multimedia, multilingual sources (e.g., text, images, videos, speech and ocr)."
+2020.acl-demos.11.txt,2020,8 Conclusion,we demonstrate a state-of-the-art multimedia multilingual knowledge extraction and event recommendation system.
+2020.acl-demos.12.txt,2020,8 Conclusion,easy-to-use retrieval focused multilingual models for embedding sentence-length text are made available on tensorflow hub.
+2020.acl-demos.12.txt,2020,8 Conclusion,"monolingual transfer task performance approaches, and in some cases exceeds, english only sentence embedding models."
+2020.acl-demos.12.txt,2020,8 Conclusion,our models are freely available under an apache license with additional documentation and tutorial colaboratory notebooks at: https://tfhub.dev/s?q=universalsentence-encoder-multilingual
+2020.acl-demos.12.txt,2020,8 Conclusion,our models embed text from 16 languages into a shared semantic embedding space and achieve a new state-of-the-art in performance on monolingual and cross-lingual semantic retrieval (sr).
+2020.acl-demos.12.txt,2020,8 Conclusion,the models achieve good performance on the related tasks of translation pair bitext retrieval (br) and retrieval question answering (reqa).
+2020.acl-demos.13.txt,2020,5 Conclusion,a demo of our platform is available at bio-nlp.org/bentodemo/.
+2020.acl-demos.13.txt,2020,5 Conclusion,bento includes a number of clinical nlp tools to facilitate the process of ehr notes.
+2020.acl-demos.13.txt,2020,5 Conclusion,computational pipelines can be configured through a web-based user-interface and then automatically executed on codalab.
+2020.acl-demos.13.txt,2020,5 Conclusion,"in this paper, we have described the design of the workflow management platform bento."
+2020.acl-demos.13.txt,2020,5 Conclusion,"to the best of our knowledge, bento represents the first web-based workflow management platform for nlp research."
+2020.acl-demos.13.txt,2020,5 Conclusion,"using bento, researchers can make use of existing tools or define their own tools."
+2020.acl-demos.14.txt,2020,5 Conclusion and Future Work,"for future work, we consider the following areas of improvement in the near term: • models downloadable in sta n z a are largely trained on a single dataset."
+2020.acl-demos.14.txt,2020,5 Conclusion and Future Work,"simultaneously, sta n z a ’s corenlp client extends its functionality with additional nlp tools."
+2020.acl-demos.14.txt,2020,5 Conclusion and Future Work,"to make models robust to many different genres of text, we would like to investigate the possibility of pooling various sources of compatible data to train “default” models for each language; • the amount of computation and resources available to us is limited."
+2020.acl-demos.14.txt,2020,5 Conclusion and Future Work,"we have showed that sta n z a ’s neural pipeline not only has wide coverage of human languages, but also is accurate on all tasks, thanks to its language-agnostic, fully neural architectural design."
+2020.acl-demos.14.txt,2020,5 Conclusion and Future Work,"we introduced sta n z a , a python natural language processing toolkit supporting many human languages."
+2020.acl-demos.14.txt,2020,5 Conclusion and Future Work,"we would like to further investigate reducing model sizes and speeding up computation in the toolkit, while still maintaining the same level of accuracy.• we would also like to expand sta n z a ’s functionality by adding other processors such as neural coreference resolution or relation extraction for richer text analytics."
+2020.acl-demos.14.txt,2020,5 Conclusion and Future Work,"we would therefore like to build an open “model zoo” for sta n z a , so that researchers from outside our group can also contribute their models and benefit from models released by others; • sta n z a was designed to optimize for accuracy of its predictions, but this sometimes comes at the cost of computational efficiency and limits the toolkit’s use."
+2020.acl-demos.15.txt,2020,5 Conclusion,"further, jiant is shown to be able to replicate published performance on various nlu tasks.jiant’s modular design of task and sentence encoder components make it possible for users to quickly and easily experiment with a large number of tasks, models, and parameter configurations, without editing source code.jiant’s design also makes it easy to add new tasks, and jiant’s architecture makes it convenient to extend jiant to support new sentence encoders.jiant code is open source, and jiant invites contributors to open issues or submit pull request to the jiant project repository: https://github.com/nyu-mll/jiant."
+2020.acl-demos.15.txt,2020,5 Conclusion,"jiant provides a configuration-driven interface for defining transfer learning and representation learning experiments using a bank of over 50 nlu tasks, cutting-edge sentence encoder models, and multi-task and multi-stage training procedures."
+2020.acl-demos.16.txt,2020,4 Conclusion,its key features are: 1) support for robust and transferable learning using adversarial multi-task learning paradigm; 2) enable knowledge distillation under the multi-task learning setting which can be leveraged to derive lighter models for efficient online deployment.
+2020.acl-demos.16.txt,2020,4 Conclusion,microsoft mt-dnn is an open-source natural language understanding toolkit which facilitates researchers and developers to build customized deep learning models.
+2020.acl-demos.16.txt,2020,4 Conclusion,"we will extend mt-dnn to support natural language generation tasks, e.g. question generation, and incorporate more pre-trained encoders, e.g. t5 (raffel et al., 2019) in future."
+2020.acl-demos.17.txt,2020,6 Conclusion and Future Work,"an interesting direction to explore is re-ranking corrective suggestions, so that the suggestion more relevant to the original sentence goes to the top."
+2020.acl-demos.17.txt,2020,6 Conclusion and Future Work,experiments show that the proposed label schema achieves comparable performance (on binary task) while providing more informative feedback.
+2020.acl-demos.17.txt,2020,6 Conclusion and Future Work,"finally, our system currently providing additional chinese translations for english examples."
+2020.acl-demos.17.txt,2020,6 Conclusion and Future Work,"for example, the method for introducing additional training data or generating artificial training data could be implemented to improve the performance."
+2020.acl-demos.17.txt,2020,6 Conclusion and Future Work,"for the ged task, we proposed a new label schema, dirc."
+2020.acl-demos.17.txt,2020,6 Conclusion and Future Work,"for the interactive writing task, we provide grammatical suggestions, collocations, and bilingual examples, to guide the user towards writing fluently."
+2020.acl-demos.17.txt,2020,6 Conclusion and Future Work,"in addition, we leverage an existing linguistic search engine to provide corrective suggestions for each error type."
+2020.acl-demos.17.txt,2020,6 Conclusion and Future Work,"in summary, we have presented an writing environment that supports interactive writing suggestions, scoring, error detection and corrective feedback."
+2020.acl-demos.17.txt,2020,6 Conclusion and Future Work,many avenues exist for future research and improvement of our system.
+2020.acl-demos.17.txt,2020,6 Conclusion and Future Work,obviously we could easily provide languages translations by changing a bilingual dictionary.
+2020.acl-demos.17.txt,2020,6 Conclusion and Future Work,yet another direction of research would be to detect fine-grained error types.
+2020.acl-demos.18.txt,2020,5 Conclusions,"our case study on the wmt2019 metrics shared task further highlights the potential of clir as a proxy task for mt evaluation, and we hope that clireval can facilitate future research in this area."
+2020.acl-demos.18.txt,2020,5 Conclusions,"rather than directly evaluating translated sentences against reference sentences, clireval transforms the inputs into the closely related task of clir, without the need for annotated clir dataset."
+2020.acl-demos.18.txt,2020,5 Conclusions,"the aim of this project is not to replace current automatic evaluation metrics or fix the limitations in those metrics, but to bridge the gap between machine translation and cross-lingual information retrieval and to show that clir is a feasible proxy task for mt evaluation."
+2020.acl-demos.18.txt,2020,5 Conclusions,"we present clireval, an open-source python-based evaluation toolkit for machine translation."
+2020.acl-demos.19.txt,2020,5 Conclusion,"based on convlab (lee et al., 2019b), convlab-2 integrates more powerful models, supports more datasets, and develops an analysis tool and an interactive tool for comprehensive end-to-end evaluation."
+2020.acl-demos.19.txt,2020,5 Conclusion,"for demonstration, we give an example of using convlab-2 to build, evaluate, and diagnose a system on the multiwoz dataset."
+2020.acl-demos.19.txt,2020,5 Conclusion,we hope that convlab-2 is instrumental in promoting the research on task-oriented dialogue.
+2020.acl-demos.19.txt,2020,5 Conclusion,"we present convlab-2, an open-source toolkit for building, evaluating, and diagnosing a taskoriented dialogue system."
+2020.acl-demos.2.txt,2020,6 Conclusion and Future Work,"apart from the distillation strategies, the model structure also affects the performance."
+2020.acl-demos.2.txt,2020,6 Conclusion and Future Work,"for example, its usability in generation tasks such as machine translation has not been tested."
+2020.acl-demos.2.txt,2020,6 Conclusion and Future Work,"in the future, we aim to integrate neural architecture search into the toolkit to automate the searching for model structures."
+2020.acl-demos.2.txt,2020,6 Conclusion and Future Work,"in this paper, we present textbrewer, a flexible pytorch-based distillation toolkit for nlp research and applications."
+2020.acl-demos.2.txt,2020,6 Conclusion and Future Work,textbrewer also has its limitations.
+2020.acl-demos.2.txt,2020,6 Conclusion and Future Work,textbrewer provides rich customization options for users to compare different distillation methods and build their strategies.
+2020.acl-demos.2.txt,2020,6 Conclusion and Future Work,the results show that the distilled models can achieve state-of-the-art results with simple settings.
+2020.acl-demos.2.txt,2020,6 Conclusion and Future Work,we have conducted a series of experiments.
+2020.acl-demos.2.txt,2020,6 Conclusion and Future Work,we will keep adding more examples and tests to expand textbrewer’s scope of application.
+2020.acl-demos.20.txt,2020,4 Conclusions and Future Work,"additionally, we would like to explore opusfilter’s use in different scenarios and for other language pairs."
+2020.acl-demos.20.txt,2020,4 Conclusions and Future Work,especially interesting would be the application in low-resource settings and various levels of noise in the original data.
+2020.acl-demos.20.txt,2020,4 Conclusions and Future Work,"furthermore, the use for domain adaptation and data selection should be further explored."
+2020.acl-demos.20.txt,2020,4 Conclusions and Future Work,"in future work, we would like to extend the toolbox with additional filters and classification options."
+2020.acl-demos.20.txt,2020,4 Conclusions and Future Work,"one option could be the inclusion of sentence embedding based filtering (guo et al., 2018)."
+2020.acl-demos.20.txt,2020,4 Conclusions and Future Work,opusfilter can easily be configured to work with opus data and various filters to train effective classifiers in order to rank bitext segments.
+2020.acl-demos.20.txt,2020,4 Conclusions and Future Work,opusfilter is open source and distributed with a permissive license to make it widely applicable.
+2020.acl-demos.20.txt,2020,4 Conclusions and Future Work,"the classifiers can be trained without human annotation, and the automatic model selection methods implemented in the toolbox lead to a similar performance compared to classifiers based on small manually labeled validation data."
+2020.acl-demos.20.txt,2020,4 Conclusions and Future Work,"this paper introduces opusfilter, a modular tool for parallel data selection and ranking."
+2020.acl-demos.20.txt,2020,4 Conclusions and Future Work,we demonstrate its use in a finnish-english translation task based on the noisy paracrawl data used for training.
+2020.acl-demos.21.txt,2020,7 Conclusion,"although nlp practitioners know that label noise harms performance, and noise detection algorithms have long been available, this technology is not being applied in practice, perhaps because human review of detected errors is difﬁcult and time consuming."
+2020.acl-demos.21.txt,2020,7 Conclusion,"and by providing an explanation of why the model ﬂagged an example as suspicious, it makes the output of label noise detectors understandable and actionable."
+2020.acl-demos.21.txt,2020,7 Conclusion,"it reduces the number of false positive examples that the reviewer must look at, providing state-of-the-art precision and f0.5 across several short text datasets."
+2020.acl-demos.21.txt,2020,7 Conclusion,lnic makes human review of possible label noise easier and more efﬁcient.
+2020.acl-demos.22.txt,2020,6 Discussion,"however, exbert can effectively narrow the scope and refine hypotheses through quick testing iterations."
+2020.acl-demos.22.txt,2020,6 Discussion,"in this paper, we introduced an interactive visualization tool, exbert, that can reveal an intelligible structure in the learned representations of transformer models."
+2020.acl-demos.22.txt,2020,6 Discussion,"these hypotheses about the model behavior can, in a later step, be evaluated by robust statistical tests on a global level."
+2020.acl-demos.22.txt,2020,6 Discussion,these neighbors do not necessarily reveal a head’s or an embedding’s global behavior.
+2020.acl-demos.22.txt,2020,6 Discussion,"to assist researchers with their model investigations, we host a demo of the tool with multiple models at exbert.net."
+2020.acl-demos.22.txt,2020,6 Discussion,we acknowledge that exbert is limited compared to more global analyses since it only presents statistics across a small number of neighbors for a single token at a time.
+2020.acl-demos.22.txt,2020,6 Discussion,"we demonstrated, through an attention visualization and nearest neighbor searching techniques, that exbert can replicate research that explores what attentions and representations learn and detect biases in text inputs."
+2020.acl-demos.23.txt,2020,9 Conclusion,"it is powered by a combination of advanced machine learning and manually curated linguistic resources, and thus succeeds in setting a new state of the art for hebrew diacritization."
+2020.acl-demos.23.txt,2020,9 Conclusion,we are pleased to release our hebrew diacritization system for free unrestricted use.
+2020.acl-demos.23.txt,2020,9 Conclusion,we have released also our diacritized test corpora for benchmarking.
+2020.acl-demos.24.txt,2020,6 Conclusion and Future Work,a comprehensive evaluation will also be conducted among the users of our system.
+2020.acl-demos.24.txt,2020,6 Conclusion and Future Work,"it is the first cross-domain text-to-sql system designed towards industrial applications with rich features, and bridges the demand of sophisticated database analysis and people without any sql background knowledge."
+2020.acl-demos.24.txt,2020,6 Conclusion and Future Work,photon has the potential to scale up to hundreds of different domains.
+2020.acl-demos.24.txt,2020,6 Conclusion and Future Work,"the current photon system is still a prototype, with very limited user interactions and functions."
