@@ -47,16 +47,20 @@ class TextCNN():
         self.model = Model(inputs=main_input, outputs=main_output)
     
     def readData(self):
-        data = pd.read_excel(self.path)
+        data = pd.read_csv(self.path)
         self.tokenizer = Tokenizer()
         self.tokenizer.fit_on_texts(data.text.values.tolist())
 
-        y_labels = [str(item) for item in data.CAT.value_counts().index.tolist()]
-        y_labels_to_id = dict([(item, i)for i,item in enumerate(y_labels)]) 
+        label_transform_dict = {}
+
+        labels = data['label'].tolist()
+        set_labels = list(set(labels))
+        for label in set_labels:
+            label_transform_dict[str(label)] = int(label)-1
 
         self.x = pad_sequences(self.tokenizer.texts_to_sequences(data.text.values.tolist()),maxlen=40,padding='post')
         #将一个label数组转化成one-hot数组。
-        self.y = np.eye(len(y_labels_to_id))[[y_labels_to_id[str(item)] for item in data.CAT.values.tolist()]]
+        self.y = np.eye(len(label_transform_dict))[[label_transform_dict[str(label)] for label in labels]]
 
     def train(self):
         if self.isTrained == False:
@@ -82,7 +86,7 @@ class TextCNN():
             self.model = keras.models.load_model(self.model_save_path)
         
     def test(self):
-        _,x,_,_y = train_test_split(self.x,self.y,test_size=0.1,random_state=11)
+        _,x,_,y = train_test_split(self.x,self.y,test_size=0.1,random_state=11)
         _,valid_x,_,valid_y = train_test_split(x,y,test_size=0.5,random_state=11)
         
         preds = self.model.predict(valid_x)
