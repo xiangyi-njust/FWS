@@ -19,8 +19,9 @@ def help():
     print("* we provide four model to classify the fws type in paper,include:bert/scibert,textcnn,bilstm")
     print("* when you need to use these models,you should use below's command")
     print("  1. Bert/SciBert")
-    print(" example：")
-    print(" python main.py --model bert --epochs 20 --wegiht bert-base-uncased --path data/TypeClassify.xlsx ")
+    print(" python main.py --model bert --epochs 20 --wegiht bert-base-uncased --path ../Data/Corpus_For_FWS_TypeClassify.xlsx --model_save_path weights/")
+    print("  2. TextCNN")
+    print(" python main.py --model TextCNN --epochs 10 --batch_size 64 --path ../Data/Corpus_For_FWS_TypeClassify.xlsx --model_save_path weights/")
     print("*******************************")
 
 def main():

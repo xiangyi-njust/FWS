@@ -66,7 +66,7 @@ def main():
 
     preds = []
 
-    # 预测的时候也是按照批量来的嘛
+    # predict
     for i,item in enumerate(dataset):
         preds.extend([np.argmax(item) for item in model.predict(item).logits])
 

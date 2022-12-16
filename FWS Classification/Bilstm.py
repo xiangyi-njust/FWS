@@ -68,7 +68,7 @@ class Bilstm():
             label_transform_dict[str(label)] = int(label)-1
 
         self.x = pad_sequences(self.tokenizer.texts_to_sequences(data.text.values.tolist()),maxlen=40,padding='post')
-        #将一个label数组转化成one-hot数组。
+        # convert label array into one-hot array
         self.y = np.eye(len(label_transform_dict))[[label_transform_dict[str(label)] for label in labels]]
 
     def train(self):

@@ -29,16 +29,17 @@ class TextCNN():
 
     def net(self):
         main_input = Input(shape=(40,))
-        # word embedding（使用预训练的词向量）
+        # word embedding
         embed = Embedding(len(self.tokenizer.word_index) + 1, 300, input_length=40)(main_input)
-        # 词窗大小分别为3,4,5
+        
         cnn1 = Conv1D(200, 3, padding='same', strides=1, activation='relu')(embed)
         cnn1 = MaxPooling1D(pool_size=38)(cnn1)
         cnn2 = Conv1D(200, 4, padding='same', strides=1, activation='relu')(embed)
         cnn2 = MaxPooling1D(pool_size=37)(cnn2)
         cnn3 = Conv1D(200, 5, padding='same', strides=1, activation='relu')(embed)
         cnn3 = MaxPooling1D(pool_size=36)(cnn3)
-        # 合并三个模型的输出向量
+
+        # merge the layer output
         cnn = concatenate([cnn1, cnn2, cnn3], axis=-1)
         flat = Flatten()(cnn)
         drop = Dropout(0.2)(flat)
@@ -59,7 +60,7 @@ class TextCNN():
             label_transform_dict[str(label)] = int(label)-1
 
         self.x = pad_sequences(self.tokenizer.texts_to_sequences(data.text.values.tolist()),maxlen=40,padding='post')
-        #将一个label数组转化成one-hot数组。
+        # convert the label array into one-hot array
         self.y = np.eye(len(label_transform_dict))[[label_transform_dict[str(label)] for label in labels]]
 
     def train(self):
