@@ -15,7 +15,7 @@ FWS                                                  Root directory
 │    ├─ Corpus For KeyphraseExtraction               Corpus for content analysis of FWS                 
 │    │    └─ Title and Abstract.csv                  Corpus for content analysis of FWS，incuding title and absrtract
 │    │
-     ├─ Corpus_For_FWS_Recognition.csv               Training dataset for FWS recognition 
+│    ├─ Corpus_For_FWS_Recognition.csv               Training dataset for FWS recognition 
 │    ├─ Corpus_For_FWS_Recognition_Predict.csv       Sample testing dataset for recognition of FWS
 │    ├─ Corpus_For_FWS_TypeClassify.csv              Training dataset for FWS classification 
 │    └─ Corpus_For_FWS_TypeClassify_Predict.csv      Sample testing dataset for FWS classification 
