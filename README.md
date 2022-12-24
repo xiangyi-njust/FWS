@@ -8,11 +8,11 @@ The aim of this paper is automatic recognition and classification of Future Work
 * After that, we classify the FWS in paper into six types including Method, Resources, Evaluation, Application, Problem and Other, via Bert, Scibert, Textcnn and Bilstm models.
 * In addition, We compare differences between keywords which are extracted from future work sentences and abstracts in other papers published several years later, to evaluate the effectiveness of FWS.
 
-## Directory structure
+### Directory structure
 FWS
 <pre>
-FWS
-├─ Dataset
+FWS                                                  Root directory
+├─ Dataset                                           Experimental datasets
 │    ├─ Corpus For KeyphraseExtraction
 │    │    ├─ Future work sentence.csv
 │    │    ├─ Stopwords.csv
@@ -27,7 +27,7 @@ FWS
 │           ├─ abs_keywords_rejusted.json
 │           ├─ fws_keywords.xlsx
 │           └─ fws_keywords_rejusted.json
-├─ FWS Classification
+├─ FWS Classification                            Source code of Classification of Future Work Sentence
 │    ├─ Bert.py
 │    ├─ Bilstm.py
 │    ├─ TextCNN.py
@@ -38,7 +38,7 @@ FWS
 │    └─ weights
 │           ├─ bilstm
 │           └─ textcnn
-├─ FWS Recognition
+├─ FWS Recognition                              Source code of Recognition of Future Work Sentence
 │    ├─ main.py
 │    └─ run.py
 └─ README.md
@@ -52,7 +52,7 @@ we release our all train dataset in *Dataset* directory:
 	
 	Corpus_For_FWS_TypeClassify.csv
 
-Additionaly, we release a part of our test dataset, if you need the whole data, contact us please.
+Additionaly, we release sample our test dataset, if you need the whole data, contact us please.
 
 ## Quick start
 To reproduce our experiment result, you can follow these steps:
