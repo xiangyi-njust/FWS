@@ -27,7 +27,7 @@ FWS                                                  Root directory
 │           ├─ abs_keywords_rejusted.json
 │           ├─ fws_keywords.xlsx
 │           └─ fws_keywords_rejusted.json
-├─ FWS Classification                                 Source code of Classification of Future Work Sentence
+├─ FWS Classification                                Source code of Classification of Future Work Sentence
 │    ├─ Bert.py
 │    ├─ Bilstm.py
 │    ├─ TextCNN.py
@@ -38,7 +38,7 @@ FWS                                                  Root directory
 │    └─ weights
 │           ├─ bilstm
 │           └─ textcnn
-├─ FWS Recognition                                    Source code of Recognition of Future Work Sentence
+├─ FWS Recognition                                   Source code of Recognition of Future Work Sentence
 │    ├─ main.py
 │    └─ run.py
 └─ README.md
