@@ -12,9 +12,7 @@ The aim of this paper is automatic recognition and classification of Future Work
 <pre>
 FWS                                                  Root directory
 ├─ Dataset                                           Experimental datasets
-│    │ 
-│    ├─ Corpus For KeyphraseExtraction               Corpus for content analysis of FWS          
-│    │    │        
+│    ├─ Corpus For KeyphraseExtraction               Corpus for content analysis of FWS                 
 │    │    └─ Title and Abstract.csv                  Corpus for content analysis of FWS，incuding title and absrtract
 │    │
      ├─ Corpus_For_FWS_Recognition.csv               Training dataset for FWS recognition 
@@ -22,9 +20,8 @@ FWS                                                  Root directory
 │    ├─ Corpus_For_FWS_TypeClassify.csv              Training dataset for FWS classification 
 │    └─ Corpus_For_FWS_TypeClassify_Predict.csv      Sample testing dataset for FWS classification 
 │   
-├─ FWS Classification                                Source code of FWS classification
-│    │ 
-     ├─ Bert.py					     Source code of BERT/SciBERT classification model
+├─ FWS Classification                                Source code of FWS classification  
+│    ├─ Bert.py					     Source code of BERT/SciBERT classification model
 │    ├─ Bilstm.py				     Source code of Bi-LSTM model
 │    ├─ TextCNN.py				     Source code of TextCNN model
 │    ├─ logs.txt				     Log file of model ouput about the classification result
@@ -36,7 +33,6 @@ FWS                                                  Root directory
 │           └─ textcnn
 │
 ├─ FWS Recognition                                   Source code of FWS recognition 
-│    │ 
 │    ├─ main.py					     Source code of preprocessing, model constructing, training and testing
 │    └─ run.py					     Source code to start training of FWS recognition
 │
