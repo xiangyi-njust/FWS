@@ -17,12 +17,12 @@ FWS                                                  Root directory
 │    │    │        
 │    │    └─ Title and Abstract.csv                  Corpus for content analysis of FWS，incuding title and absrtract
 │    │
-     ├─ Corpus_For_FWS_Recognition.csv               Training dataset for recognition of Future Work Sentence
-│    ├─ Corpus_For_FWS_Recognition_Predict.csv       Sample testing dataset for recognition of Future Work Sentence
-│    ├─ Corpus_For_FWS_TypeClassify.csv              Training dataset for classification of Future Work Sentence
-│    └─ Corpus_For_FWS_TypeClassify_Predict.csv      Sample testing dataset for classification of Future Work Sentence
+     ├─ Corpus_For_FWS_Recognition.csv               Training dataset for FWS recognition 
+│    ├─ Corpus_For_FWS_Recognition_Predict.csv       Sample testing dataset for recognition of FWS
+│    ├─ Corpus_For_FWS_TypeClassify.csv              Training dataset for FWS classification 
+│    └─ Corpus_For_FWS_TypeClassify_Predict.csv      Sample testing dataset for FWS classification 
 │   
-├─ FWS Classification                                Source code of classification of Future Work Sentence
+├─ FWS Classification                                Source code of FWS classification
 │    │ 
      ├─ Bert.py
 │    ├─ Bilstm.py
@@ -35,7 +35,7 @@ FWS                                                  Root directory
 │           ├─ bilstm
 │           └─ textcnn
 │
-├─ FWS Recognition                                   Source code of recognition of Future Work Sentence
+├─ FWS Recognition                                   Source code of FWS recognition 
 │    │ 
 │    ├─ main.py
 │    └─ run.py
