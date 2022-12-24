@@ -3,7 +3,7 @@
 ## Overview
 <b> Data and source Cdde for the paper "Automatic Recognition and Classification of Future Work Sentences from Academic Articles in a Specific Domain".</b>
 
-The aim of this paper is automatic recognition and classification of Future Work Sentences (FWS) from academic articles. We choose the NLP domain as an example, and use papers from three main conferences, naemly ACL, EMNLP and NAACL (These conferences can be visited via https://aclanthology.org/), as exprimental dataset. Our work includes the followig aspects:
+The aim of this paper is automatic recognition and classification of Future Work Sentences (FWS) from academic articles. We choose Natural Language Preocessing (NLP) domain as an example, and use papers from three main conferences, namey ACL, EMNLP and NAACL (These conferences can be visited via https://aclanthology.org/), as exprimental dataset. Our work includes the followig aspects:
 * After human annotation of the future work sentence, we use some traditional machine learning models including logistic regression (LR),  naive Bayes (NB)   support vector machine (SVM)  and random forest (RF), to judge whether one sentence is FWS or not.
 * After that, we classify the FWS in paper into six types including Method, Resources, Evaluation, Application, Problem and Other, via Bert, Scibert, Textcnn and Bilstm models.
 * In addition, We compare differences between keywords which are extracted from future work sentences and abstracts in other papers published several years later, to evaluate the effectiveness of FWS.
