@@ -55,7 +55,7 @@ We release our all train dataset in *Dataset* directory:
 <li>year: Year of publication
 <li>text: Content of FWS or Non-FWS.
 <li>label: 1: FWS and 0: Non-FWS.
-<li>Chapter: Type of chapter headings.
+<li>chapter: Type of chapter headings.
 	
 <b>Each line of Corpus_For_FWS_TypeClassify.csv includes: </b>
 <li>id: Paper ID in ACL Anthology.
