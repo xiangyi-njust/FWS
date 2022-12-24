@@ -9,7 +9,6 @@ The aim of this paper is automatic recognition and classification of Future Work
 * In addition, We compare differences between keywords which are extracted from future work sentences and abstracts in other papers published several years later, to evaluate the effectiveness of FWS.
 
 ### Directory structure
-FWS
 <pre>
 FWS                                                  Root directory
 ├─ Dataset                                           Experimental datasets
