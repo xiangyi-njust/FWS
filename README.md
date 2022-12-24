@@ -23,7 +23,8 @@ FWS                                                  Root directory
 │    └─  Corpus_For_FWS_TypeClassify_Predict.csv     Sample testing dataset for classification of Future Work Sentence
 │   
 ├─ FWS Classification                                Source code of classification of Future Work Sentence
-│    ├─ Bert.py
+│    │ 
+     ├─ Bert.py
 │    ├─ Bilstm.py
 │    ├─ TextCNN.py
 │    ├─ logs.txt
@@ -35,6 +36,7 @@ FWS                                                  Root directory
 │           └─ textcnn
 │
 ├─ FWS Recognition                                   Source code of recognition of Future Work Sentence
+│    │ 
 │    ├─ main.py
 │    └─ run.py
 │
