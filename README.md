@@ -13,9 +13,9 @@ The aim of this paper is automatic recognition and classification of Future Work
 FWS                                                  Root directory
 ├─ Dataset                                           Experimental datasets
 │    │ 
-│    ├─ Corpus For KeyphraseExtraction               Corpus for content analysis of future work sentences           
+│    ├─ Corpus For KeyphraseExtraction               Corpus for content analysis of FWS          
 │    │    │        
-│    │    └─ Title and Abstract.csv                  Corpus for content analysis of future work sentences，incuding title and absrtract
+│    │    └─ Title and Abstract.csv                  Corpus for content analysis of FWS，incuding title and absrtract
 │    │
      ├─ Corpus_For_FWS_Recognition.csv               Training dataset for recognition of Future Work Sentence
 │    ├─ Corpus_For_FWS_Recognition_Predict.csv       Sample testing dataset for recognition of Future Work Sentence
