@@ -25,7 +25,7 @@ FWS                                                  Root directory
 │    ├─ Bilstm.py				     Source code of Bi-LSTM model
 │    ├─ TextCNN.py				     Source code of TextCNN model
 │    ├─ logs.txt				     Log file which records classification performance of classification model
-│    ├─ main.py					     Source code for selecting a model to train Corpus_For_FWS_Recognition by command line arguments
+│    ├─ main.py					     Source code for selecting a model to train Corpus_For_FWS_TypeClassify.csv by command line arguments
 │    ├─ predict.py				     Source code for using trained model to predict label of FWS in test dataset
 │    ├─ run.py					     Source code to start training process of FWS classification
 │    └─ weights					     Model's weight
