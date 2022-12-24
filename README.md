@@ -24,21 +24,21 @@ FWS                                                  Root directory
 │   
 ├─ FWS Classification                                Source code of FWS classification
 │    │ 
-     ├─ Bert.py
-│    ├─ Bilstm.py
-│    ├─ TextCNN.py
-│    ├─ logs.txt
-│    ├─ main.py
-│    ├─ predict.py
-│    ├─ run.py
-│    └─ weights
+     ├─ Bert.py					     Source code for bert/scibert classification model
+│    ├─ Bilstm.py				     Source code for bilstm model
+│    ├─ TextCNN.py				     Source code for textcnn model
+│    ├─ logs.txt				     the log file of model ouput about the classification result
+│    ├─ main.py					     Source code for the passing of command line parameters and the selection of models
+│    ├─ predict.py				     Source code for trained model's classification result in test dataste
+│    ├─ run.py					     Source code for automatically start the training process
+│    └─ weights					     the model's weight(the bert/scibert weight it too large to upload in github)
 │           ├─ bilstm
 │           └─ textcnn
 │
 ├─ FWS Recognition                                   Source code of FWS recognition 
 │    │ 
-│    ├─ main.py
-│    └─ run.py
+│    ├─ main.py					     Source code of preprocess, model construct, training and testing
+│    └─ run.py					     Source code for automatically start the training process
 │
 └─ README.md
 </pre>
