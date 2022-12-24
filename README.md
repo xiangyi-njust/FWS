@@ -12,20 +12,16 @@ The aim of this paper is automatic recognition and classification of Future Work
 <pre>
 FWS                                                  Root directory
 ├─ Dataset                                           Experimental datasets
-│    ├─ Corpus For KeyphraseExtraction              
-│    │    ├─ Future work sentence.csv
-│    │    ├─ Stopwords.csv
-│    │    ├─ Title and Abstract.csv
-│    │    └─ replace.txt
-│    ├─ Corpus_For_FWS_Recognition.csv               Training dataset for recognition of Future Work Sentence
+│    │ 
+│    ├─ Corpus For KeyphraseExtraction               Corpus for content analysis of future work sentences           
+│    │    │        
+│    │    └─ Title and Abstract.csv                  Corpus for content analysis of future work sentences，incuding title and absrtract
+│    │
+     ├─ Corpus_For_FWS_Recognition.csv               Training dataset for recognition of Future Work Sentence
 │    ├─ Corpus_For_FWS_Recognition_Predict.csv       Sample testing dataset for recognition of Future Work Sentence
 │    ├─ Corpus_For_FWS_TypeClassify.csv              Training dataset for classification of Future Work Sentence
-│    ├─ Corpus_For_FWS_TypeClassify_Predict.csv      Sample testing dataset for classification of Future Work Sentence
-│    └─ Keyphrases
-│           ├─ abs_keywords.xlsx
-│           ├─ abs_keywords_rejusted.json
-│           ├─ fws_keywords.xlsx
-│           └─ fws_keywords_rejusted.json
+│    └─  Corpus_For_FWS_TypeClassify_Predict.csv     Sample testing dataset for classification of Future Work Sentence
+│   
 ├─ FWS Classification                                Source code of classification of Future Work Sentence
 │    ├─ Bert.py
 │    ├─ Bilstm.py
@@ -37,9 +33,11 @@ FWS                                                  Root directory
 │    └─ weights
 │           ├─ bilstm
 │           └─ textcnn
+│
 ├─ FWS Recognition                                   Source code of recognition of Future Work Sentence
 │    ├─ main.py
 │    └─ run.py
+│
 └─ README.md
 </pre>
 
