@@ -30,7 +30,7 @@ FWS                                                  Root directory
 │    ├─ logs.txt				     Log file of model ouput about the classification result
 │    ├─ main.py					     Source code for the passing of command line parameters and the selection of models
 │    ├─ predict.py				     Source code for trained model's classification result in testing dataset
-│    ├─ run.py					     Source code for automatically start the training process
+│    ├─ run.py					     Source code to start training of FWS Classification
 │    └─ weights					     Model's weight
 │           ├─ bilstm
 │           └─ textcnn
@@ -38,7 +38,7 @@ FWS                                                  Root directory
 ├─ FWS Recognition                                   Source code of FWS recognition 
 │    │ 
 │    ├─ main.py					     Source code of preprocessing, model constructing, training and testing
-│    └─ run.py					     Source code for automatically start the training process
+│    └─ run.py					     Source code to start training of FWS Recognition
 │
 └─ README.md
 </pre>
