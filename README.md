@@ -45,24 +45,24 @@ FWS                                                  Root directory
 
 ## Dataset discription
 
-<b>We release our all train dataset in *Dataset* directory: </b>
+    <b>We release our all train dataset in *Dataset* directory: </b>
 
-<li><b>Corpus_For_FWS_Recognition.csv</b>: Traning dataset for classification of Future Work Sentence, it contains 9,009 FWS and 55,887 Non-FWS respectively.
-<li><b>Corpus_For_FWS_TypeClassify.csv</b>: Traning dataset for Recognition of Future Work Sentence, it contains 9,009 records.
+    <li><b>Corpus_For_FWS_Recognition.csv</b>: Traning dataset for classification of Future Work Sentence, it contains 9,009 FWS and 55,887 Non-FWS respectively.
+    <li><b>Corpus_For_FWS_TypeClassify.csv</b>: Traning dataset for Recognition of Future Work Sentence, it contains 9,009 records.
 
-<b>Each line of Corpus_For_FWS_Recognition includes: </b>
-<li>id: Paper ID in ACL Anthology.
-<li>year: Year of publication
-<li>text: Content of FWS or Non-FWS.
-<li>label: 1: FWS and 0: Non-FWS.
-<li>Chapter: Type of chapter headings.
+    <b>Each line of Corpus_For_FWS_Recognition includes: </b>
+    <li>id: Paper ID in ACL Anthology.    
+    <li>year: Year of publication
+    <li>text: Content of FWS or Non-FWS.
+    <li>label: 1: FWS and 0: Non-FWS.
+    <li>Chapter: Type of chapter headings.
 	
-<b>Each line of Corpus_For_FWS_TypeClassify.csv includes: </b>
-<li>id: Paper ID in ACL Anthology.
-<li>lable: Six types of FWS including method, resources, evaluation, application, problem and other.
-<li>text: Content of FWS. 	
+    <b>Each line of Corpus_For_FWS_TypeClassify.csv includes: </b>
+    <li>id: Paper ID in ACL Anthology.
+    <li>lable: Six types of FWS including method, resources, evaluation, application, problem and other.
+    <li>text: Content of FWS. 	
 		
-Additionaly, we release sample our test dataset, if you need the whole data, contact us please.
+    Additionaly, we release sample our test dataset, if you need the whole data, contact us please.
 
 ## Quick start
 To reproduce our experiment result, you can follow these steps:
