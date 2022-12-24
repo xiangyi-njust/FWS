@@ -24,9 +24,9 @@ FWS                                                  Root directory
 │    ├─ Bert.py					     Source code of BERT/SciBERT classification model
 │    ├─ Bilstm.py				     Source code of Bi-LSTM model
 │    ├─ TextCNN.py				     Source code of TextCNN model
-│    ├─ logs.txt				     Log file of model ouput about the classification result
-│    ├─ main.py					     Source code for the passing of command line parameters and the selection of models
-│    ├─ predict.py				     Source code for trained model's classification result in testing dataset
+│    ├─ logs.txt				     A log file that holds the classification performance of the model
+│    ├─ main.py					     Source code for selecting a specific model for training based on command line argumentss
+│    ├─ predict.py				     Source code for applying the trained model to the test dataset
 │    ├─ run.py					     Source code to start training of FWS classification
 │    └─ weights					     Model's weight
 │           ├─ bilstm
