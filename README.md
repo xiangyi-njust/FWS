@@ -20,7 +20,7 @@ FWS                                                  Root directory
      ├─ Corpus_For_FWS_Recognition.csv               Training dataset for recognition of Future Work Sentence
 │    ├─ Corpus_For_FWS_Recognition_Predict.csv       Sample testing dataset for recognition of Future Work Sentence
 │    ├─ Corpus_For_FWS_TypeClassify.csv              Training dataset for classification of Future Work Sentence
-│    └─  Corpus_For_FWS_TypeClassify_Predict.csv     Sample testing dataset for classification of Future Work Sentence
+│    └─ Corpus_For_FWS_TypeClassify_Predict.csv      Sample testing dataset for classification of Future Work Sentence
 │   
 ├─ FWS Classification                                Source code of classification of Future Work Sentence
 │    │ 
