@@ -1,7 +1,7 @@
 # Automatic Recognition and Classification of Future Work Sentences from Academic Articles in a Specific Domain
 
 ## Overview
-<b> Data and Code for the paper "Automatic Recognition and Classification of Future Work Sentences from Academic Articles in a Specific Domain".</b>
+<b> Data and source Cdde for the paper "Automatic Recognition and Classification of Future Work Sentences from Academic Articles in a Specific Domain".</b>
 
 The aim of this paper is automatic recognition and classification of Future Work Sentences (FWS) from academic articles. We choose the NLP domain as an example, and use papers from three main conferences, naemly ACL, EMNLP and NAACL (These conferences can be visited via https://aclanthology.org/), as exprimental dataset. Our work includes the followig aspects:
 * After human annotation of the future work sentence, we use some traditional machine learning models including logistic regression (LR),  naive Bayes (NB)   support vector machine (SVM)  and random forest (RF), to judge whether one sentence is FWS or not.
@@ -12,21 +12,21 @@ The aim of this paper is automatic recognition and classification of Future Work
 <pre>
 FWS                                                  Root directory
 ├─ Dataset                                           Experimental datasets
-│    ├─ Corpus For KeyphraseExtraction
+│    ├─ Corpus For KeyphraseExtraction              
 │    │    ├─ Future work sentence.csv
 │    │    ├─ Stopwords.csv
 │    │    ├─ Title and Abstract.csv
 │    │    └─ replace.txt
-│    ├─ Corpus_For_FWS_Recognition.csv
-│    ├─ Corpus_For_FWS_Recognition_Predict.csv
-│    ├─ Corpus_For_FWS_TypeClassify.csv
-│    ├─ Corpus_For_FWS_TypeClassify_Predict.csv
+│    ├─ Corpus_For_FWS_Recognition.csv               Training dataset for recognition of Future Work Sentence
+│    ├─ Corpus_For_FWS_Recognition_Predict.csv       Sample testing dataset for recognition of Future Work Sentence
+│    ├─ Corpus_For_FWS_TypeClassify.csv              Training dataset for classification of Future Work Sentence
+│    ├─ Corpus_For_FWS_TypeClassify_Predict.csv      Sample testing dataset for classification of Future Work Sentence
 │    └─ Keyphrases
 │           ├─ abs_keywords.xlsx
 │           ├─ abs_keywords_rejusted.json
 │           ├─ fws_keywords.xlsx
 │           └─ fws_keywords_rejusted.json
-├─ FWS Classification                                Source code of Classification of Future Work Sentence
+├─ FWS Classification                                Source code of classification of Future Work Sentence
 │    ├─ Bert.py
 │    ├─ Bilstm.py
 │    ├─ TextCNN.py
@@ -37,7 +37,7 @@ FWS                                                  Root directory
 │    └─ weights
 │           ├─ bilstm
 │           └─ textcnn
-├─ FWS Recognition                                   Source code of Recognition of Future Work Sentence
+├─ FWS Recognition                                   Source code of recognition of Future Work Sentence
 │    ├─ main.py
 │    └─ run.py
 └─ README.md
