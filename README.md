@@ -30,7 +30,7 @@ FWS                                                  Root directory
 │    ├─ run.py					     Source code to start training process of FWS classification
 │    └─ weights					     Model's weight
 │           ├─ bilstm                                Weight of Bi-LSTM model
-	│           └─ textcnn                       Weight of TextCNN model
+│           └─ textcnn                               Weight of TextCNN model
 │
 ├─ FWS Recognition                                   Source code of FWS recognition 
 │    ├─ main.py					     Source code of data preprocessing, training and testing of FWS recognition model
