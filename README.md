@@ -29,8 +29,8 @@ FWS                                                  Root directory
 │    ├─ predict.py				     Source code for using trained model to predict label of FWS in test dataset
 │    ├─ run.py					     Source code to start training process of FWS classification
 │    └─ weights					     Model's weight
-│           ├─ bilstm
-│           └─ textcnn
+│           ├─ bilstm                                Weight of Bi-LSTM model
+	│           └─ textcnn                       Weight of TextCNN model
 │
 ├─ FWS Recognition                                   Source code of FWS recognition 
 │    ├─ main.py					     Source code of data preprocessing, training and testing of FWS recognition model
