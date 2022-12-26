@@ -20,7 +20,7 @@ FWS                                                  Root directory
 │    ├─ Corpus_For_FWS_TypeClassify.csv              Training dataset for FWS classification 
 │    └─ Corpus_For_FWS_TypeClassify_Predict.csv      Sample testing dataset for FWS classification 
 │   
-├─ FWS Classification                                Source code of FWS classification  
+├─ FWS Classification                                Module of FWS classification  
 │    ├─ Bert.py					     Source code of BERT/SciBERT classification model
 │    ├─ Bilstm.py				     Source code of Bi-LSTM model
 │    ├─ TextCNN.py				     Source code of TextCNN model
@@ -32,7 +32,7 @@ FWS                                                  Root directory
 │           ├─ bilstm                                Weight of Bi-LSTM model
 │           └─ textcnn                               Weight of TextCNN model
 │
-├─ FWS Recognition                                   Source code of FWS recognition 
+├─ FWS Recognition                                   Module of FWS recognition 
 │    ├─ main.py					     Source code of data preprocessing, training and testing of FWS recognition model
 │    └─ run.py					     Source code to start training of FWS recognition
 │
