@@ -80,4 +80,4 @@ We provide two notebooks, you can follow the steps to extract keywords and do so
 ## Citation
 Please cite the following paper if you use these codes and datasets in your work.
 
-> Chengzhi Zhang, Wenke Hao, Zhicheng Li, Yuchen Qian, Yuzhuo Wang. Automatic Recognition and Classification of Future Work Sentences from Academic Articles in a Specific Domain. ***Journal of Informetrics***, 2023, 17(1): 101373. [[doi]( https://doi.org/10.1016/j.joi.2022.101373)]  [[arXiv](http://arxiv.org/abs/2212.13860)]  [[Dataset & Source Code]](https://github.com/xiangyi-njust/FWS/)
+> Chengzhi Zhang, Yi Xiang, Wenke Hao, Zhicheng Li, Yuchen Qian, Yuzhuo Wang. Automatic Recognition and Classification of Future Work Sentences from Academic Articles in a Specific Domain. ***Journal of Informetrics***, 2023, 17(1): 101373. [[doi]( https://doi.org/10.1016/j.joi.2022.101373)]  [[arXiv](http://arxiv.org/abs/2212.13860)]  [[Dataset & Source Code]](https://github.com/xiangyi-njust/FWS/)
