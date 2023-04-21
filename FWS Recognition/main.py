@@ -14,6 +14,7 @@ from sklearn.naive_bayes import MultinomialNB, ComplementNB, BernoulliNB
 from sklearn.feature_selection import VarianceThreshold,SelectKBest,RFE,SelectFromModel,chi2
 from sklearn.model_selection import train_test_split,cross_val_score,cross_validate
 import re
+import os
 from nltk.corpus import stopwords
 from nltk import word_tokenize, pos_tag
 from nltk.corpus import wordnet
@@ -163,11 +164,12 @@ def help():
 about the classifier has configure,these parameters are getted by our multiple experiments")
     print()
     print("*  command example:")
-    print("python extract.py --model svm --cv 10 ")
+    print("python main.py --model svm --tar_path data//tfidf.pkl --flag True")
     print()
     print("*  parameters meaning:")
     print("--model: configure the classifier you want to use")
-    print("--cv: configure the n-fold cross-val")
+    print("--tar_path: configure the tfidf weight of input sentence")
+    print("--flag: configure that we will use the tfidf.pkl has trained in data directory;")
     print()
     print("for any problem,you can contact us with this email:xiangyi@njust.edu.cn")
     print("*****************************************************************")
@@ -183,6 +185,10 @@ def main():
     cv = arg_val['cv']
     flag = arg_val['flag']
 
+    # make dir
+    if not os.path.exists('data/'):
+        os.mkdir('data/')
+        
     # get tfidf
     if arg_val['model'] == None:
         help()
