@@ -3,42 +3,38 @@
 ## Overview
 <b> Data and source Cdde for the paper "Automatic Recognition and Classification of Future Work Sentences from Academic Articles in a Specific Domain".</b>
 
-The aim of this paper is automatic recognition and classification of Future Work Sentences (FWS) from academic articles. We choose the NLP domain as an example, and use papers from three main conferences, naemly ACL, EMNLP and NAACL (These conferences can be visited via https://aclanthology.org/), as exprimental dataset. Our work includes the followig aspects:
-* After human annotation of the future work sentence, we use some traditional machine learning models including logistic regression (LR),  naive Bayes (NB)   support vector machine (SVM)  and random forest (RF), to judge whether one sentence is FWS or not.
-* After that, we classify the FWS in paper into six types including Method, Resources, Evaluation, Application, Problem and Other, via Bert, Scibert, Textcnn and Bilstm models.
-* In addition, We compare differences between keywords which are extracted from future work sentences and abstracts in other papers published several years later, to evaluate the effectiveness of FWS.
+The aim of this paper is automatic recognition and classification of Future Work Sentences (FWS) from academic articles. We choose Natural Language Preocessing (NLP) domain as an example, and use papers from three main conferences, namey ACL, EMNLP and NAACL (These conferences can be visited via https://aclanthology.org/), as exprimental dataset. Our work includes the followig aspects:
+* **FWS Recognition**: After human annotation of the future work sentence, we use traditional machine learning models including Logistic Regression (LR), Naïve Bayes (NB), Support Vector Machine (SVM)  and Random Forest (RF), to judge whether one sentence is FWS or not.
+* **FWS Classification**: After FWS Recognition, we classify the FWS in paper into six types including Method, Resources, Evaluation, Application, Problem and Other, via Bert, Scibert, Textcnn and Bilstm models.
+* **FWS Evaluation**: In addition, we compare difference between keywords which are extracted from the FWS and abstracts in other papers published several years later, to evaluate the effectiveness of FWS.
 
 ### Directory structure
 <pre>
 FWS                                                  Root directory
 ├─ Dataset                                           Experimental datasets
-│    │ 
-│    ├─ Corpus For KeyphraseExtraction               Corpus for content analysis of FWS          
-│    │    │        
+│    ├─ Corpus For KeyphraseExtraction               Corpus for content analysis of FWS                 
 │    │    └─ Title and Abstract.csv                  Corpus for content analysis of FWS，incuding title and absrtract
 │    │
-     ├─ Corpus_For_FWS_Recognition.csv               Training dataset for FWS recognition 
+│    ├─ Corpus_For_FWS_Recognition.csv               Training dataset for FWS recognition 
 │    ├─ Corpus_For_FWS_Recognition_Predict.csv       Sample testing dataset for recognition of FWS
 │    ├─ Corpus_For_FWS_TypeClassify.csv              Training dataset for FWS classification 
 │    └─ Corpus_For_FWS_TypeClassify_Predict.csv      Sample testing dataset for FWS classification 
 │   
-├─ FWS Classification                                Source code of FWS classification
-│    │ 
-     ├─ Bert.py					     Source code for bert/scibert classification model
-│    ├─ Bilstm.py				     Source code for bilstm model
-│    ├─ TextCNN.py				     Source code for textcnn model
-│    ├─ logs.txt				     the log file of model ouput about the classification result
-│    ├─ main.py					     Source code for the passing of command line parameters and the selection of models
-│    ├─ predict.py				     Source code for trained model's classification result in test dataste
-│    ├─ run.py					     Source code for automatically start the training process
-│    └─ weights					     the model's weight(the bert/scibert weight it too large to upload in github)
-│           ├─ bilstm
-│           └─ textcnn
+├─ FWS Classification                                Module of FWS classification  
+│    ├─ Bert.py					     Source code of BERT/SciBERT classification model
+│    ├─ Bilstm.py				     Source code of Bi-LSTM model
+│    ├─ TextCNN.py				     Source code of TextCNN model
+│    ├─ logs.txt				     Log file which records classification performance of classification model
+│    ├─ main.py					     Source code for selecting a model to train Corpus_For_FWS_Recognition by command line arguments
+│    ├─ predict.py				     Source code for using trained model to predict label of FWS in test dataset
+│    ├─ run.py					     Source code to start training process of FWS classification
+│    └─ weights					     Model's weight
+│           ├─ bilstm                                Weight of Bi-LSTM model
+│           └─ textcnn                               Weight of TextCNN model
 │
-├─ FWS Recognition                                   Source code of FWS recognition 
-│    │ 
-│    ├─ main.py					     Source code of preprocess, model construct, training and testing
-│    └─ run.py					     Source code for automatically start the training process
+├─ FWS Recognition                                   Module of FWS recognition 
+│    ├─ main.py					     Source code of data preprocessing, training and testing of FWS recognition model
+│    └─ run.py					     Source code to start training of FWS recognition
 │
 └─ README.md
 </pre>
@@ -47,8 +43,8 @@ FWS                                                  Root directory
 
 We release our all train dataset in *Dataset* directory: 
 
-<li><b>Corpus_For_FWS_Recognition.csv</b>: Traning dataset for classification of Future Work Sentence, it contains 9,009 FWS and 55,887 Non-FWS respectively.
-<li><b>Corpus_For_FWS_TypeClassify.csv</b>: Traning dataset for Recognition of Future Work Sentence, it contains 9,009 records.
+<li><b>Corpus_For_FWS_Recognition.csv</b>: Traning dataset for classification of Future Work Sentence, it contains 9, 009 FWS and 55, 887 Non-FWS respectively.
+<li><b>Corpus_For_FWS_TypeClassify.csv</b>: Traning dataset for Recognition of Future Work Sentence, it contains 9, 009 records.
 
 <b>Each line of Corpus_For_FWS_Recognition includes: </b>
 <li>id: Paper ID in ACL Anthology.    
@@ -84,4 +80,4 @@ We provide two notebooks, you can follow the steps to extract keywords and do so
 ## Citation
 Please cite the following paper if you use these codes and datasets in your work.
 
-> Chengzhi Zhang, Wenke Hao, Zhicheng Li, Yuchen Qian, Yuzhuo Wang. Automatic Recognition and Classification of Future Work Sentences from Scientific Literactures in the Domain of Natural Language Processing. *Journal of Informetrics*, 2022. (under review)
+> Chengzhi Zhang, Yi Xiang, Wenke Hao, Zhicheng Li, Yuchen Qian, Yuzhuo Wang. Automatic Recognition and Classification of Future Work Sentences from Academic Articles in a Specific Domain. ***Journal of Informetrics***, 2023, 17(1): 101373. [[doi]( https://doi.org/10.1016/j.joi.2022.101373)]  [[arXiv](http://arxiv.org/abs/2212.13860)]  [[Dataset & Source Code]](https://github.com/xiangyi-njust/FWS/)
