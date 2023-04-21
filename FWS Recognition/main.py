@@ -93,7 +93,7 @@ def preprocess(texts):
 
 def getTfidf(ori_path,tar_path):
     # read data
-    df = pd.read_excel(ori_path)
+    df = pd.read_csv(ori_path)
     texts = df['text'].tolist()
     labels = df['label'].tolist()
  
